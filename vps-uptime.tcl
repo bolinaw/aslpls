@@ -1,4 +1,4 @@
-# vps_uptime.tcl
+# vps_uptime.tcl by asl_pls @ irc.underx.org #aslpls
 # Displays VPS uptime strictly as "Days running" and the "Boot Date"
 #
 # Usage: !uptime
