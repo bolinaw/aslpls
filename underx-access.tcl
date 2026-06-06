@@ -1,4 +1,5 @@
 ###############################################################################
+# underx-access.tcl by asl_pls @ irc.underx.org #aslpls
 # Undernet X Access Manager Script for Eggdrop
 # Commands: 
 #   !add <user> <access>   - Adds a user to X access list (Requires Op/Master)
@@ -79,5 +80,5 @@ namespace eval ::XAccess {
         return 1
     }
 
-    putlog "Loaded: Undernet X Access Manager Script (with !autovoice) by Gemini"
+    putlog "Loaded: UnderX X Access Manager Script by asl_pls"
 }
