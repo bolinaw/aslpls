@@ -1,56 +1,63 @@
-# vps_uptime.tcl by asl_pls @ irc.underx.org #aslpls
-# Displays VPS uptime strictly as "Days running" and the "Boot Date"
-#
-# Usage: !uptime
+###############################################################################
+# Christmas 2026 Countdown Auto-Topic Script for Eggdrop
+# Updates the channel topic every 2 hours with the remaining time.
+###############################################################################
 
-set uptime_trigger "!vpstime"
-
-bind pub - $uptime_trigger pub_vps_uptime
-
-proc pub_vps_uptime {nick uhost hand chan arg} {
-    # 1. Calculate precise days from /proc/uptime
-    if {[catch {open "/proc/uptime" r} fp_uptime]} {
-        putquick "PRIVMSG $chan :Error: Cannot read system uptime."
-        return
-    }
-    set uptime_seconds [lindex [gets $fp_uptime] 0]
-    close $fp_uptime
+namespace eval ::XmasCountdown {
+    # ------------ CONFIGURATION ------------
     
-    # Convert total seconds to whole days
-    set uptime_days [expr {int($uptime_seconds / 86400)}]
-
-    # 2. Get the boot timestamp from /proc/stat
-    if {[catch {open "/proc/stat" r} fp_stat]} {
-        putquick "PRIVMSG $chan :Error: Cannot read system stats."
-        return
-    }
+    # Target channels (space-separated, e.g., "#lobby #lounge")
+    variable channels "#aslpls"
     
-    set boot_time 0
-    while {[gets $fp_stat line] >= 0} {
-        if {[string match "btime *" $line]} {
-            set boot_time [lindex $line 1]
-            break
+    # The base topic prefix. The countdown will be appended to this.
+    variable topic_prefix "0,4 H 2,7 e 2,8 y 2,9 ! 2,15 *  "
+    
+    # ------------ END OF CONFIGURATION ------------
+
+    # Bind a time timer to run every 2 hours (at 00, 02, 04, etc. mins past the hour)
+    # Eggdrop 'time' binds use the format "minute hour day month weekday"
+    # A minute value of "00" triggers once an hour. We'll filter for every 2 hours inside.
+    bind time - "00 * * * *" [namespace current]::check_time
+
+    proc check_time {min hour day month weekday} {
+        # Check if the current hour is even (every 2 hours: 0, 2, 4, 6...)
+        if {$hour % 2 == 0} {
+            update_topic
         }
     }
-    close $fp_stat
 
-    if {$boot_time == 0} {
-        putquick "PRIVMSG $chan :Error: Could not determine boot date."
-        return
+    proc update_topic {} {
+        variable channels
+        variable topic_prefix
+
+        # Target timestamp: Christmas Day 2026 (Dec 25, 2026 00:00:00)
+        set xmas_time [clock scan "2026-12-25 00:00:00" -format "%Y-%m-%d %H:%M:%S"]
+        set now [clock seconds]
+        
+        set diff [expr {$xmas_time - $now}]
+
+        if {$diff <= 0} {
+            set countdown_str "? Merry Christmas 2026! ?"
+        } else {
+            # Calculate days, hours, and minutes
+            set days [expr {$diff / 86400}]
+            set rem [expr {$diff % 86400}]
+            set hours [expr {$rem / 3600}]
+            set mins [expr {($rem % 3600) / 60}]
+
+            set countdown_str "1Only4 $days days1,7 $hours hours1, and6 $mins minutes101 until Christmas Day 2026! "
+        }
+
+        # Combine your static prefix with the countdown string
+        set new_topic "${topic_prefix}${countdown_str}"
+
+        # Loop through configured channels and update if the bot is on them
+        foreach chan [split $channels] {
+            if {[validchan $chan] && [botisop $chan]} {
+                puthelp "TOPIC $chan :$new_topic"
+            }
+        }
     }
-
-    # Format the boot timestamp into a clean Date (e.g., "Day-Month-Year")
-    set boot_date [clock format $boot_time -format "%d-%b-%Y"]
-
-    # 3. Output the clean response to IRC
-    # Handles singular/plural for days
-    if {$uptime_days == 1} {
-        set day_label "day"
-    } else {
-        set day_label "days"
-    }
-
-    putquick "PRIVMSG $chan :\002VPS Status:\002 $uptime_days $day_label | \002Boot Date:\002 $boot_date"
 }
 
-putlog "Loaded: VPS Clean Uptime Script (Trigger: $uptime_trigger)"
+putlog "Loaded: Christmas 2026 Countdown Topic Script (Every 2 Hours)"
