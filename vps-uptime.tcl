@@ -1,4 +1,5 @@
 ###############################################################################
+# christmas-countdown.tcl by asl_pls @ irc.underx.org #aslpls
 # Christmas 2026 Countdown Auto-Topic Script for Eggdrop
 # Updates the channel topic every 2 hours with the remaining time.
 ###############################################################################
