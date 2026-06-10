@@ -80,5 +80,5 @@ namespace eval ::XAccess {
         return 1
     }
 
-    putlog "Loaded: UnderX X Access Manager Script by asl_pls"
+    putlog "Loaded: UnderX X Access Manager Script by asl_pls @ irc.underx.org  #aslpls"
 }
