@@ -273,3 +273,5 @@ namespace eval ::ChanMonitor {
 
     init
 }
+
+putlog "Loaded: Channel_monitor.tcl by asl_pls @ irc.underx.org #aslpls"
