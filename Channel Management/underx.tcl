@@ -1,29 +1,28 @@
 ###############################################################################
-# underx.tcl by asl_pls @ irc.underx.org #aslpls
-# An Eggdrop script for UnderX Service Management & Authentication.
+# underx.tcl by asl_pls @ irc.underx.org #aslpls                              #
+# An Eggdrop script for UnderX Service Management & Authentication.           #
 ###############################################################################
-#
-#  How to use it in your channels:
-#  The script automatically detects the channel you are typing in so you 
-#     don't have to keep writing #channel. Make sure your Eggdrop is logged 
-#     in as a master or manager in X for the specific channel to perform these 
-#     commands.
-#
-#  To add a user: .xadd TargetUser 100
-#  To remove a user: .xdel TargetUser
-#  To change access level: .xlevel TargetUser 150
-#  To change automode to OP: .xmode TargetUser op
-#  To change automode to VOICE: .xmode TargetUser voice
-#  To turn off automode: .xmode TargetUser none
-#
+#                                                                             #
+#  How to use it in your channels:                                            #
+#  The script automatically detects the channel you are typing in so you      #
+#    don't have to keep writing #channel. Make sure your Eggdrop is logged    #
+#    in as a master or manager in X for the specific channel to perform these # 
+#    commands.                                                                #
+#                                                                             #
+#  To add a user:                 .xadd TargetUser 100                        #
+#  To remove a user:              .xdel TargetUser                            #
+#  To change access level:        .xlevel TargetUser 150                      #  
+#  To change automode to OP:      .xmode TargetUser op                        #
+#  To change automode to VOICE:   .xmode TargetUser voice                     #   
+#  To turn off automode:          .xmode TargetUser none                      #  
+#                                                                             #   
 ###############################################################################
-
 
 # --- Configuration ---
 namespace eval ::UnderX {
     # Your X service username and password
-    variable x_user "xcoder"
-    variable x_pass "Temp123?"
+    variable x_user "username"
+    variable x_pass "password"
 
     # The flag required to use the channel management commands in IRC
     # 'n' means only Eggdrop owners can use them. Change to 'o' for any op.
