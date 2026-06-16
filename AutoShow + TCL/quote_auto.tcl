@@ -108,5 +108,5 @@ namespace eval ::AutoQuoteBot {
         }
     }
     
-    putlog "AutoQuote Script loaded. Tight parser active for $targetChan by asl_pls @ irc.underx.org #aslpls."
+    putlog "AutoQuote Script loaded. $targetChan by asl_pls @ irc.underx.org #aslpls."
 }
