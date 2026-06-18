@@ -1,11 +1,11 @@
 check it out XiRPG IRC Channel Game, active and working
 
-irc.underx.org #idlerpg
+<h4>irc.underx.org #idlerpg<h4>
 
 
 check it out XiRPG IRC Channel Game, active and working
 
-<strong>irc.pinoychat.fun #idlerpg</strong>
+<h3>irc.pinoychat.fun #idlerpg</h3>
 
 
 look for aslpls / asl_pls
