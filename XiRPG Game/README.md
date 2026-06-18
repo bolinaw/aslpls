@@ -46,20 +46,21 @@ BOUNTY BOARD ACTIONS<br>
 
 
 
-Levellin Experience			Monsters<br>
+| Level Range | Experience (%) | Monsters                                                 |
+| ----------- | -------------- | -------------------------------------------------------- |
+| 1–10        | 1%             | Rats, insects, weak creatures                            |
+| 11–25       | 2–3%           | Wolves, goblins, wild beasts                             |
+| 26–50       | 4–5%           | Orcs, giant spiders, bandits                             |
+| 51–100      | 6–10%          | Trolls, ogres, elite beasts                              |
+| 101–150     | 11–15%         | Wyverns, elementals                                      |
+| 151–200     | 16–20%         | Lesser dragons, demon scouts                             |
+| 201–300     | 21–30%         | Ancient beasts, giant monsters                           |
+| 301–400     | 31–40%         | Greater dragons, war demons                              |
+| 401–500     | 41–50%         | Legendary creatures                                      |
+| 501–600     | 51–60%         | Titan-class monsters                                     |
+| 601–700     | 61–70%         | World-threatening creatures                              |
+| 701–800     | 71–80%         | Mythic titans, elder horrors                             |
+| 801–900     | 81–90%         | Demi-gods, primordial beasts                             |
+| 901–1000    | 91–99%         | God-tier entities                                        |
+| 1001+       | 100%+          | Cosmic beings, reality-shapers, universe-ending entities |
 
-Level 	1-10 1% 			Rats, insects, weak creatures<br>
-Level 	11-25 2-3% 			Wolves, goblins, wild beasts<br>
-Level 	26-50 4-5% 			Orcs, giant spiders, bandits<br>
-Level 	51-100 6-10% 		Trolls, ogres, elite beasts<br>
-Level 	101-150 11-15% 		Wyverns, elementals<br>
-Level 	151-200 16-20% 		Lesser dragons, demon scouts<br>
-Level 	201-300 21-30% 		Ancient beasts, giant monsters<br>
-Level 	301-400 31-40% 		Greater dragons, war demons<br>
-Level 	401-500 41-50% 		Legendary creatures<br>
-Level 	501-600 51-60% 		Titan-class monsters<br>
-Level 	601-700 61-70% 		World-threatening creatures<br>
-Level 	701-800 71-80% 		Mythic titans, elder horrors<br>
-Level 	801-900 81-90% 		Demi-gods, primordial beasts<br>
-Level 	901-1000 91-99% 	God-tier entities<br>
-Level 	1001+ 100%+ 		Cosmic beings, reality-shapers, universe-<br>
