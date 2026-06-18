@@ -16,13 +16,13 @@
 
 namespace eval ::Slots {
     # --- Configuration ---
-    variable target_channel "#aslpls"           ;# The ONLY channel where this game can be played
-    variable score_file "scripts/slots_scores.dat" ;# Where to save user points
-    variable starting_points 500                ;# Points given to new players
-    variable daily_bonus 250                    ;# Points awarded by !daily
-    variable min_bet 10                         ;# Minimum bet allowed
-    variable max_bet 500                        ;# Maximum bet allowed
-    variable top_limit 5                        ;# Number of players to show in !top
+    variable target_channel "#aslpls"               ;# The ONLY channel where this game can be played
+    variable score_file "scripts/slots_scores.dat"  ;# Where to save user points
+    variable starting_points 500                    ;# Points given to new players
+    variable daily_bonus 250                        ;# Points awarded by !daily
+    variable min_bet 10                             ;# Minimum bet allowed
+    variable max_bet 500                            ;# Maximum bet allowed
+    variable top_limit 5                            ;# Number of players to show in !top
 
     # Symbol emojis/text and their payout multipliers
     variable symbols [list "🍒" "🍋" "🍊" "🍇" "🔔" "💎"]
@@ -216,4 +216,4 @@ namespace eval ::Slots {
     init
 }
 
-putlog "Loaded Slots Casino Script v1.3 by asl_pls @ irc.underx.org"
+putlog "Loaded Slots Casino Script v1.0 by asl_pls @ irc.underx.org"
