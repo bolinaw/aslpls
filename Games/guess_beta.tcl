@@ -19,7 +19,7 @@ namespace eval ::GuessGamePro {
     variable max 100
     variable time_limit 60; # Time limit per round (seconds)
     variable default_rounds 5; # Default number of rounds per game
-    variable datafile "data/guess_top5.dat"
+    variable datafile "data/guess.dat"
 
     # --- Game State Variables ---
     variable secret_number 0
