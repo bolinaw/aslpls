@@ -6,11 +6,12 @@
 #                     \_/ \|\____/\____/\_/   \____/\____/	                        #
 #                       asl_pls / irc.underx.org #aslpls    	                    #
 ##################################################################################### 
-#
-# vps_uptime.tcl by asl_pls @ irc.underx.org #aslpls
-# Displays VPS uptime strictly as "Days running" and the "Boot Date"
-#
-# Usage: !uptime
+#                                                                                   #
+#         vps_uptime.tcl by asl_pls @ irc.underx.org #aslpls                        #
+#         Displays VPS uptime strictly as "Days running" and the "Boot Date"        #
+#                                                                                   # 
+#         Usage: !uptime                                                            #
+#                                                                                   #         
 #####################################################################################
 
 set uptime_trigger "!uptime"
@@ -63,4 +64,4 @@ proc pub_vps_uptime {nick uhost hand chan arg} {
     putquick "PRIVMSG $chan :\002VPS Status:\002 $uptime_days $day_label | \002Boot Date:\002 $boot_date"
 }
 
-putlog "Loaded: VPS Clean Uptime Script (Trigger: $uptime_trigger) by asl_pls @ irc.underx.org #aslpls"
+putlog "Loaded: VPS Clean Uptime Script (Trigger: $uptime_trigger) by asl_pls @ irc.underx.org"
