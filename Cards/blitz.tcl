@@ -13,6 +13,10 @@
 #              Players draw and discard to get their 3-card hand as close to 		#
 #              31 points in a single suit as possible.								#
 #																					#
+#    How to play the game:                                                          # 
+#        ->> https://frugalfun4boys.com/how-to-play-blitz-card-game/                #
+#        ->> https://www.youtube.com/watch?v=c2V6U3MbbaY                            #
+#                                                                                   #    
 #####################################################################################
 
 namespace eval ::Blitz {
