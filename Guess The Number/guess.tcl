@@ -6,11 +6,11 @@
 #                     \_/ \|\____/\____/\_/   \____/\____/	                        #
 #                       asl_pls / irc.underx.org #aslpls    	                    #
 ##################################################################################### 
-#
-# guess_multiround.tcl by asl_pls @ irc.underx.org #aslpls
-# Robust Multi-round guessing game with flawless file saving.
-# Usage: !startguess [rounds] | !guess <number> | !top
-#
+#                                                                                   # 
+#         guess_multiround.tcl by asl_pls @ irc.underx.org #aslpls                  # 
+#         Robust Multi-round guessing game with flawless file saving.               #
+#         Usage: !startguess [rounds] | !guess <number> | !top                      #
+#                                                                                   # 
 ##################################################################################### 
 
 namespace eval ::GuessGamePro {
@@ -283,4 +283,4 @@ namespace eval ::GuessGamePro {
     }
 }
 
-putlog "Multi-round Guessing Game with Top 5 by asl_pls @ irc.underx.org #aslpls Loaded Successfully!"
+putlog "Multi-round Guessing Game with Top 5 by asl_pls @ irc.underx.org Loaded Successfully!"
