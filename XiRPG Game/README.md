@@ -40,8 +40,13 @@ ALCHEMIST SHOP CODES<br>
 
 
 BOUNTY BOARD ACTIONS<br>
-  bounty              - Check current active contract mark, zone location, and prize<br>
-  bounty hunt         - Instantly track and challenge the elite bounty (30 min CD)<br>
+
+| Command       | Description                                                                      |
+| ------------- | -------------------------------------------------------------------------------- |
+| `bounty`      | Check the current active contract mark, zone location, and reward prize.         |
+| `bounty hunt` | Instantly track and challenge the elite bounty target. **Cooldown:** 30 minutes. |
+
+  
 
 
 
