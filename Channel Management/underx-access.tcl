@@ -1,19 +1,21 @@
-#####################################################################################
-#                      ____  ____  _     ____  _     ____ 	                        #
-#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
-#                     | / \||    \| |   |  \/|| |   |    \	                        #
-#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
-#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
-#                       asl_pls / irc.underx.org #aslpls    	                    #
-##################################################################################### 
-# underx-access.tcl by asl_pls @ irc.underx.org #aslpls
-# Undernet X Access Manager Script for Eggdrop
-# Commands: 
-#   !add <user> <access>   - Adds a user to X access list (Requires Op/Master)
-#   !remove <user>        - Removes a user from X access list (Requires Op/Master)
-#   !autoop <user>        - Sets user's automode to OP ON via X (Requires Op/Master)
-#   !autovoice <user>     - Sets user's automode to VOICE ON via X (Requires Op/Master)
-#####################################################################################
+################################################################################################
+#                          ____  ____  _     ____  _     ____ 	                               #
+#                         /  _ \/ ___\/ \   /  __\/ \   / ___\	                               #
+#                         | / \||    \| |   |  \/|| |   |    \	                               #
+#                         | |-||\___ || |_/\|  __/| |_/\\___ |	                               #
+#                         \_/ \|\____/\____/\_/   \____/\____/	                               #
+#                           asl_pls / irc.underx.org #aslpls    	                           #
+################################################################################################ 
+#                 underx-access.tcl by asl_pls @ irc.underx.org #aslpls                        #
+#                         UnderX Access Manager Script for Eggdrop                             #   
+#                                                                                              #  
+#     Commands:                                                                                # 
+#       !add <user> <access>   - Adds a user to X access list (Requires Op/Master)             #
+#       !remove <user>        - Removes a user from X access list (Requires Op/Master)         #
+#       !autoop <user>        - Sets user's automode to OP ON via X (Requires Op/Master)       # 
+#       !autovoice <user>     - Sets user's automode to VOICE ON via X (Requires Op/Master)    #
+#                                                                                              #  
+################################################################################################
 
 namespace eval ::XAccess {
     # CHANGE THIS: Set the flag required to use these commands.
@@ -87,5 +89,5 @@ namespace eval ::XAccess {
         return 1
     }
 
-    putlog "Loaded: UnderX X Access Manager Script by asl_pls @ irc.underx.org  #aslpls"
+    putlog "Loaded: UnderX X Access Manager Script by asl_pls @ irc.underx.org"
 }
