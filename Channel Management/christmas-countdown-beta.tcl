@@ -6,10 +6,12 @@
 #                     \_/ \|\____/\____/\_/   \____/\____/	                        #
 #                       asl_pls / irc.underx.org #aslpls    	                    #
 ##################################################################################### 
-# christmas-countdown.tcl by asl_pls @ irc.underx.org #aslpls
-# Christmas 2026 Countdown Auto-Topic Script for Eggdrop
-# Updates the channel topic every 2 hours with the remaining time.
-###############################################################################
+#                                                                                   # 
+#     christmas-countdown.tcl by asl_pls @ irc.underx.org #aslpls                   # 
+#     Christmas 2026 Countdown Auto-Topic Script for Eggdrop                        #
+#     Updates the channel topic every 2 hours with the remaining time.              #  
+#                                                                                   #     
+#####################################################################################
 
 namespace eval ::XmasCountdown {
     # ------------ CONFIGURATION ------------
@@ -68,4 +70,4 @@ namespace eval ::XmasCountdown {
     }
 }
 
-putlog "Loaded: Christmas 2026 Countdown Topic Script (Every 2 Hours) by asl_pls @ irc.underx.org #aslpls"
+putlog "Loaded: Christmas 2026 Countdown Topic Script (Every 2 Hours) by asl_pls @ irc.underx.org"
