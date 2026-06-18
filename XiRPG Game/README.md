@@ -10,7 +10,7 @@ XiRPG CORE COMMAND ENGINE
 
 Execute all actions via private message: /msg botnick command
 
-<br><br><br><br><br><br>
+<br><br><br>
 COMMANDS: /msg botnick command<br><br><br><br>
 
 | Command            | Purpose          | Description                                                                                         |
@@ -22,7 +22,7 @@ COMMANDS: /msg botnick command<br><br><br><br>
 
 
 
-
+<br><br><br>
 COMBAT & EQUIPMENT<br>
 
 | Command  | Action            | Description                                                                  |
@@ -31,7 +31,7 @@ COMBAT & EQUIPMENT<br>
 | `forge`  | Weapon Upgrade    | Upgrade your weapon up to **+10**. Costs gold and carries a risk of failure. |
 
 
-
+<br><br><br>
 
 COMPANION SYSTEM<br>
 
@@ -44,7 +44,7 @@ COMPANION SYSTEM<br>
 | `pet dismiss`     | Dismiss Pet      | —     | Permanently release and delete your current pet |
   
 
-
+<br><br><br>
 ALCHEMIST SHOP CODES<br>
 
 | Command        | Item            | Cost  | Effect                                             |
@@ -55,7 +55,7 @@ ALCHEMIST SHOP CODES<br>
 | `buy ration`   | Combat Ration   | 500g  | Guarantees entry into the next Boss Raid.          |
 
 
-
+<br><br><br>
 
 BOUNTY BOARD ACTIONS<br>
 
@@ -66,7 +66,7 @@ BOUNTY BOARD ACTIONS<br>
 
 
   
-
+<br><br><br>
 
 
 
@@ -88,3 +88,4 @@ BOUNTY BOARD ACTIONS<br>
 | 901–1000    | 91–99%         | God-tier entities                                        |
 | 1001+       | 100%+          | Cosmic beings, reality-shapers, universe-ending entities |
 
+<br><br><br>
