@@ -1,6 +1,6 @@
 <p>check it out XiRPG.tcl IRC Eggdrop Channel Game, active and working</p>
 
-<code>irc.underx.org #idlerpg</code>
+<pre>irc.underx.org #idlerpg</pre>
 <pre>irc.pinoychat.fun #idlerpg</pre>
 
 <code>look for aslpls / asl_pls</code>
