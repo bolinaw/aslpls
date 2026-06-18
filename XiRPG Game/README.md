@@ -3,11 +3,11 @@
 <h3 style="color: blue;">irc.underx.org #idlerpg</h3>
 <h3 style="color: blue;">irc.pinoychat.fun #idlerpg</h3>
 
-<span>look for aslpls / asl_pls</span>
+<code>look for aslpls / asl_pls</code>
 
-<br><br><br>
+<br><br>
 
-XiRPG CORE COMMAND ENGINE 
+XiRPG CORE COMMAND ENGINE<br>
 Execute all actions via private message: /msg botnick command
 
 COMMAND: &nbsp;&nbsp;&nbsp;<bold>/msg botnick command</bold><br><br><br>
