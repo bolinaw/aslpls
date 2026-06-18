@@ -1,9 +1,9 @@
-check it out XiRPG IRC Channel Game, active and working
+<p>check it out XiRPG IRC Channel Game, active and working</p>p
 
-<h4>irc.underx.org #idlerpg<h4>
+<h3>irc.underx.org #idlerpg<h3>
 
 
-check it out XiRPG IRC Channel Game, active and working
+<p>check it out XiRPG IRC Channel Game, active and working</p>
 
 <h3>irc.pinoychat.fun #idlerpg</h3>
 
