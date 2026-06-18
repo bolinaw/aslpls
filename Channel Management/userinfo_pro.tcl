@@ -11,10 +11,10 @@
 # Nickname / Context: asl_pls | irc.underx.org #aslpls                                 #
 ########################################################################################
 #                                                                                      #
-# Steps to Run:                                                                        #  
-# Save this full block as a .tcl file (e.g., scripts/userinfo.tcl).                    #
-# Add source scripts/userinfo.tcl to your eggdrop.conf.                                #   
-# Rehash your bot (.rehash on the partyline).                                          #
+#     Steps to Run:                                                                    #  
+#     Save this full block as a .tcl file (e.g., scripts/userinfo.tcl).                #
+#     Add source scripts/userinfo.tcl to your eggdrop.conf.                            #   
+#     Rehash your bot (.rehash on the partyline).                                      #
 #                                                                                      #
 ########################################################################################
 
@@ -122,4 +122,4 @@ proc pub_userinfo {nick uhost hand chan arg} {
     return 1
 }
 
-putlog "Loaded: Channel & User Info Script v2.3 by asl_pls @ irc.underx.org #aslpls"
+putlog "Loaded: Channel & User Info Script v2.3 by asl_pls @ irc.underx.org"
