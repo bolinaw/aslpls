@@ -10,33 +10,54 @@ XiRPG CORE COMMAND ENGINE
 
 Execute all actions via private message: /msg botnick command
 
-COMMANDS<br>
 
-/msg botnick command<br>
+COMMANDS<br><br>
 
-  register <Class>    - Create profile. Classes: Warrior, Mage, Rogue, Cleric, Paladin, Ranger, Necromancer, Bard<br>
-  stats               - View your attributes, level, gold, gear, and pet<br>
-  stats <player>      - Inspect another player's level, equipment, and metrics<br>
-  rpghelp             - Display this comprehensive help interface<br>
+
+/msg botnick command<br><br>
+
+| Command            | Purpose          | Description                                                                                         |
+| ------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
+| `register <Class>` | Create Character | Create a new profile. Classes: **Warrior, Mage, Rogue, Cleric, Paladin, Ranger, Necromancer, Bard** |
+| `stats`            | View Character   | Display your attributes, level, gold, equipment, and current pet                                    |
+| `stats <player>`   | Inspect Player   | View another player's level, equipment, and performance metrics                                     |
+| `rpghelp`          | Help Menu        | Display the complete RPG command and feature guide                                                  |
+
+
+
 
 COMBAT & EQUIPMENT<br>
-  attack              - Manually strike an active World Boss to deal damage<br>
-  forge               - Upgrade weapon (Max +10). Costs gold; carries risks<br>
+
+| Command  | Action            | Description                                                                  |
+| -------- | ----------------- | ---------------------------------------------------------------------------- |
+| `attack` | World Boss Attack | Manually strike an active World Boss to deal damage.                         |
+| `forge`  | Weapon Upgrade    | Upgrade your weapon up to **+10**. Costs gold and carries a risk of failure. |
+
+
 
 
 COMPANION SYSTEM<br>
-  pet                 - Check your current companion slot status<br>
-  pet buy Courier     - Buy Courier pet (500g | Aura: Passive Gold/min)<br>
-  pet buy Roshan      - Buy Roshan pet (2500g | Buff: +25% Raid Boss Damage)<br>
-  pet buy Wisp        - Buy Wisp pet (5000g | Perk: +10% Hunt Survival rate)<br>
-  pet dismiss         - Permanently release and delete your current pet<br>
+
+| Command           | Pet / Action     | Cost  | Benefit                                         |
+| ----------------- | ---------------- | ----- | ----------------------------------------------- |
+| `pet`             | Companion Status | —     | Check your current companion slot status        |
+| `pet buy Courier` | Courier          | 500g  | Aura: Passive Gold Generation                   |
+| `pet buy Roshan`  | Roshan           | 2500g | Buff: +25% Raid Boss Damage                     |
+| `pet buy Wisp`    | Wisp             | 5000g | Perk: +10% Hunt Survival Rate                   |
+| `pet dismiss`     | Dismiss Pet      | —     | Permanently release and delete your current pet |
+  
 
 
 ALCHEMIST SHOP CODES<br>
-  buy                 - View the premium alchemy shop wares and pricing<br>
-  buy catalyst        - Purchase Forge Insurance (1500g | Protects weapon from reset)<br>
-  buy elixir          - Purchase Elixir of Mind (300g | Double passive XP for 2 hrs)<br>
-  buy ration          - Purchase Combat Ration (500g | Forces entry into next Boss raid)<br>
+
+| Command        | Item            | Cost  | Effect                                             |
+| -------------- | --------------- | ----- | -------------------------------------------------- |
+| `buy`          | —               | —     | View the premium alchemy shop wares and pricing.   |
+| `buy catalyst` | Forge Insurance | 1500g | Protects a weapon from being reset during forging. |
+| `buy elixir`   | Elixir of Mind  | 300g  | Doubles passive XP gain for 2 hours.               |
+| `buy ration`   | Combat Ration   | 500g  | Guarantees entry into the next Boss Raid.          |
+
+
 
 
 BOUNTY BOARD ACTIONS<br>
@@ -45,6 +66,7 @@ BOUNTY BOARD ACTIONS<br>
 | ------------- | -------------------------------------------------------------------------------- |
 | `bounty`      | Check the current active contract mark, zone location, and reward prize.         |
 | `bounty hunt` | Instantly track and challenge the elite bounty target. **Cooldown:** 30 minutes. |
+
 
   
 
