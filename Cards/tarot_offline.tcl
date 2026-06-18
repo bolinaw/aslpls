@@ -8,7 +8,7 @@
 #####################################################################################
 #                                                                                   #
 # Eggdrop IRC Tarot Card Reading Script                                             #
-# tarot.tcl by asl_pls @ irc.underx.org #aslpls                                     #
+# tarot_offline.tcl by asl_pls @ irc.underx.org #aslpls                                     #
 #                                                                                   #          
 # Commands: !tarot [nick]                                                           # 
 #                                                                                   # 
@@ -95,5 +95,5 @@ namespace eval ::Tarot {
         return 1
     }
 
-    putlog "Loaded: Tarot.tcl | asl_pls irc.underx.org #aslpls Loaded!"
+    putlog "Loaded: Tarot_Offline.tcl | asl_pls irc.underx.org #aslpls Loaded!"
 }
