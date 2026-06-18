@@ -6,7 +6,7 @@
 #                     \_/ \|\____/\____/\_/   \____/\____/	                        #
 #                       asl_pls / irc.underx.org #aslpls    	                    #
 ##################################################################################### 
-#             quote_auto.tcl by asl_pls @ irc.underx.org #aslpls			        #
+#             quote_zenquotes.tcl by asl_pls @ irc.underx.org #aslpls		        #
 #																                    #
 #           Ensure required packages are loaded							            #
 #           Prerequisites													        #
