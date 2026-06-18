@@ -11,7 +11,7 @@ XiRPG CORE COMMAND ENGINE
 Execute all actions via private message: /msg botnick command
 
 <br><br><br>
-COMMANDS: /msg botnick command<br><br><br>
+COMMAND: &nbsp;&nbsp;&nbsp;<bold>/msg botnick command</bold><br><br><br>
 
 | Command            | Purpose          | Description                                                                                         |
 | ------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
