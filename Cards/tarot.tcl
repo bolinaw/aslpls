@@ -6,12 +6,12 @@
 #                     \_/ \|\____/\____/\_/   \____/\____/	                        #
 #                       asl_pls / irc.underx.org #aslpls    	                    #
 #####################################################################################
-#
-# Eggdrop IRC Tarot Card Reading Script
-# tarot.tcl by asl_pls @ irc.underx.org #aslpls 
-# 
-# Commands: !tarot [nick]
-#
+#                                                                                   #
+# Eggdrop IRC Tarot Card Reading Script                                             #
+# tarot.tcl by asl_pls @ irc.underx.org #aslpls                                     #
+#                                                                                   #          
+# Commands: !tarot [nick]                                                           # 
+#                                                                                   # 
 #####################################################################################
 
 namespace eval ::Tarot {
