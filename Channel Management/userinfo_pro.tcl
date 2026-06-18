@@ -1,4 +1,11 @@
 ########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                           #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                           #
+#                     | / \||    \| |   |  \/|| |   |    \	                           #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                           #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                           #
+#                       asl_pls / irc.underx.org #aslpls    	                       #
+########################################################################################
 # userinfo_pro.tcl - Channel & User Info Script                                        #
 # Features: Idle time, mutual channels, channel flags, and last-seen activity tracker. #   
 # Nickname / Context: asl_pls | irc.underx.org #aslpls                                 #
