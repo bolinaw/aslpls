@@ -6,14 +6,14 @@
 #                     \_/ \|\____/\____/\_/   \____/\____/	                        #
 #                       asl_pls / irc.underx.org #aslpls    	                    #
 #####################################################################################
-#
-# tarot_online.tcl - Eggdrop Tarot Script
-#
-# Description: Uses tarotapi.dev to pull random cards. Fixed hanging state bug.
-# Commands:    !tarot
-# Requirements: Tcl 8.6+ with 'http', 'tls', and 'json' packages.
-#
-###############################################################################
+#                                                                                   #
+#     tarot_online.tcl - Eggdrop Tarot Script                                       # 
+#                                                                                   # 
+#     Description: Uses tarotapi.dev to pull random cards. Fixed hanging state bug. #   
+#     Commands:    !tarot                                                           # 
+#     Requirements: Tcl 8.6+ with 'http', 'tls', and 'json' packages.               # 
+#                                                                                   # 
+#####################################################################################
 
 package require http
 package require tls
