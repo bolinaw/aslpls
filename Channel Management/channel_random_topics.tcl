@@ -6,15 +6,16 @@
 #                     \_/ \|\____/\____/\_/   \____/\____/	                        #
 #                       asl_pls / irc.underx.org #aslpls    	                    #
 ##################################################################################### 
-# x-random_topics.tcl by asl_pls @ irc.underx.org #aslpls
-# x-random_topics.tcl - Eggdrop Random Channel Topic Rotator
-#
-# Features:
-#   - Cycles through 5 pre-defined topics randomly.
-#   - Changes the topic automatically every 5 hours.
-#   - Tracks an internal counter so it survives bot splits/reconnects.
-#
-################################################################################
+#                                                                                   # 
+#             x-random_topics.tcl by asl_pls @ irc.underx.org #aslpls               #
+#                     Eggdrop Random Channel Topic Rotator                          #  
+#                                                                                   # 
+#             Features:                                                             #
+#               - Cycles through 5 pre-defined topics randomly.                     #
+#               - Changes the topic automatically every 5 hours.                    #
+#               - Tracks an internal counter so it survives bot splits/reconnects.  #  
+#                                                                                   #         
+#####################################################################################
 
 namespace eval ::topic_rotator {
     # --- Configuration ---
