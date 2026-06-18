@@ -1,4 +1,11 @@
 ######################################################################################
+#                      ____  ____  _     ____  _     ____ 	                         #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                         #
+#                     | / \||    \| |   |  \/|| |   |    \	                         #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                         #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                         #
+#                       asl_pls / irc.underx.org #aslpls    	                     #
+######################################################################################
 # chanlimit_pro.tcl - Advanced Dynamic Channel Limit Script                          #  
 # Features: Multi-channel support, flood protection, and real-time activity logging. #
 # Nickname / Context: asl_pls | irc.underx.org #aslpls                               # 
