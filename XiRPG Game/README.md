@@ -11,7 +11,7 @@ XiRPG CORE COMMAND ENGINE
 Execute all actions via private message: /msg botnick command
 
 <br><br><br>
-COMMANDS: /msg botnick command<br><br><br><br>
+COMMANDS: /msg botnick command<br><br><br>
 
 | Command            | Purpose          | Description                                                                                         |
 | ------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
@@ -20,9 +20,7 @@ COMMANDS: /msg botnick command<br><br><br><br>
 | `stats <player>`   | Inspect Player   | View another player's level, equipment, and performance metrics                                     |
 | `rpghelp`          | Help Menu        | Display the complete RPG command and feature guide                                                  |
 
-
-
-<br><br><br>
+<br><br>
 COMBAT & EQUIPMENT<br>
 
 | Command  | Action            | Description                                                                  |
@@ -30,9 +28,7 @@ COMBAT & EQUIPMENT<br>
 | `attack` | World Boss Attack | Manually strike an active World Boss to deal damage.                         |
 | `forge`  | Weapon Upgrade    | Upgrade your weapon up to **+10**. Costs gold and carries a risk of failure. |
 
-
-<br><br><br>
-
+<br><br>
 COMPANION SYSTEM<br>
 
 | Command           | Pet / Action     | Cost  | Benefit                                         |
@@ -43,8 +39,7 @@ COMPANION SYSTEM<br>
 | `pet buy Wisp`    | Wisp             | 5000g | Perk: +10% Hunt Survival Rate                   |
 | `pet dismiss`     | Dismiss Pet      | —     | Permanently release and delete your current pet |
   
-
-<br><br><br>
+<br><br>
 ALCHEMIST SHOP CODES<br>
 
 | Command        | Item            | Cost  | Effect                                             |
@@ -54,9 +49,7 @@ ALCHEMIST SHOP CODES<br>
 | `buy elixir`   | Elixir of Mind  | 300g  | Doubles passive XP gain for 2 hours.               |
 | `buy ration`   | Combat Ration   | 500g  | Guarantees entry into the next Boss Raid.          |
 
-
-<br><br><br>
-
+<br><br>
 BOUNTY BOARD ACTIONS<br>
 
 | Command       | Description                                                                      |
@@ -64,11 +57,8 @@ BOUNTY BOARD ACTIONS<br>
 | `bounty`      | Check the current active contract mark, zone location, and reward prize.         |
 | `bounty hunt` | Instantly track and challenge the elite bounty target. **Cooldown:** 30 minutes. |
 
-
-  
-<br><br><br>
-
-
+<br><br>
+LEVEL & EXPERIENCE<br>
 
 | Level Range | Experience (%) | Monsters                                                 |
 | ----------- | -------------- | -------------------------------------------------------- |
