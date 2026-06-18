@@ -7,9 +7,9 @@
 #                       asl_pls / irc.underx.org #aslpls    	                    #
 ##################################################################################### 
 #																					#
-# AI IRC Channel Companion Tcl Script												#	
-# Uses OpenRouter's free tier API to talk in an IRC channel							#
-# Includes a 15-minute channel announcement reminder								#
+#     AI IRC Channel Companion Tcl Script											#	
+#     Uses OpenRouter's free tier API to talk in an IRC channel						#
+#     Includes a 15-minute channel announcement reminder							#
 #																					#
 #####################################################################################
 
