@@ -1,15 +1,16 @@
-#########################################
-#  ____  ____  _     ____  _     ____ 	#	
-# /  _ \/ ___\/ \   /  __\/ \   / ___\	#
-# | / \||    \| |   |  \/|| |   |    \	#
-# | |-||\___ || |_/\|  __/| |_/\\___ |	#
-# \_/ \|\____/\____/\_/   \____/\____/	#
-#                                    	#
-#########################################                                                                              
-#
-# Advanced Eggdrop Weather Script with AQI, Forecasts, & Automated Channel Timers
-# Triggers: !weather <city>   |   !forecast <city>
-
+#####################################################################################
+#                      ____  ____  _     ____  _     ____ 	                        #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
+#                     | / \||    \| |   |  \/|| |   |    \	                        #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
+#                       asl_pls / irc.underx.org #aslpls    	                    #
+#####################################################################################                                                                              
+#                                                                                   #
+# Advanced Eggdrop Weather Script with AQI, Forecasts, & Automated Channel Timers   #
+# Triggers: !weather <city>   |   !forecast <city>    |    openweathermap.org (API) #
+#                                                                                   #
+#####################################################################################
 
 package require http
 package require tls
@@ -18,7 +19,7 @@ package require json
 namespace eval ::ircweather {
     # --- CONFIGURATION ---
     variable apiKey "YOUR-API-KEY-HERE" #openweathermap.org
-    variable units "metric" ;# "metric" (캜, m/s) or "imperial" (캟, mph)
+    variable units "metric" ;# "metric" (째C, m/s) or "imperial" (째F, mph)
 
     # --- AUTOMATIC CHANNEL BROADCAST CONFIG ---
     variable autoShow 1          ;# 1 = Enabled, 0 = Disabled
@@ -90,7 +91,7 @@ namespace eval ::ircweather {
             set aqiStr [getAqiString [expr {round($aqiVal)}]]
         }
 
-        set uSign [expr {$units eq "metric" ? "캜" : "캟"}]
+        set uSign [expr {$units eq "metric" ? "째C" : "째F"}]
         set b "\002"
 
         set out "\00306Current Weather\003 for \00303${cityName}, ${country}\003: [string totitle $desc] | "
@@ -125,7 +126,7 @@ namespace eval ::ircweather {
                 set fTemp [expr {round([dict get $chunk main temp])}]
                 set fDesc [dict get [lindex [dict get $chunk weather] 0] main]
                 set fHum [dict get $chunk main humidity]
-                set uSign [expr {$units eq "metric" ? "캜" : "캟"}]
+                set uSign [expr {$units eq "metric" ? "째C" : "째F"}]
                 
                 if {$stepCount == 1} {
                     set dayLabel "Tomorrow"
