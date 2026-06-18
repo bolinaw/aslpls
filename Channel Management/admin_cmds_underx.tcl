@@ -1,6 +1,15 @@
-# admin_underx.tcl by asl_pls @ irc.underx.org #aslpls
-# Eggdrop Administrative and UnderX Service Automation Script
-# Updated with extended channel modes and X modinfo capabilities.
+#####################################################################################
+#                      ____  ____  _     ____  _     ____ 	                        #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
+#                     | / \||    \| |   |  \/|| |   |    \	                        #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
+#                       asl_pls / irc.underx.org #aslpls    	                    #
+##################################################################################### 
+# admin_underx.tcl by asl_pls @ irc.underx.org #aslpls                              #
+# Eggdrop Administrative and UnderX Service Automation Script                       #
+# Updated with extended channel modes and X modinfo capabilities.                   #
+##################################################################################### 
 
 namespace eval ::AdminX {
     # -----------------------------------------------------------------
