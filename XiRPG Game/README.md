@@ -7,8 +7,8 @@
 
 <br><br>
 
-XiRPG CORE COMMAND ENGINE<br>
-Execute all actions via private message: /msg botnick command
+%%XiRPG CORE COMMAND ENGINE<br>%%
+<code>Execute all actions via private message</code>
 
 COMMAND: &nbsp;&nbsp;&nbsp;<bold>/msg botnick command</bold><br><br><br>
 
