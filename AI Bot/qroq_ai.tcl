@@ -7,10 +7,10 @@
 #                       asl_pls / irc.underx.org #aslpls    	                    #
 ##################################################################################### 
 #																					#																					
-# groq_ai.tcl by asl_pls @ irc.underx.org #aslpls									#
-# AI IRC Channel Companion Tcl Script												#				
-# Uses Groq API to talk in an IRC channel											#
-# Includes a 15-minute channel announcement reminder								#	
+#     groq_ai.tcl by asl_pls @ irc.underx.org #aslpls								#
+#     AI IRC Channel Companion Tcl Script											#				
+#     Uses Groq API to talk in an IRC channel										#
+#     Includes a 15-minute channel announcement reminder							#	
 #																					#
 #####################################################################################
 
