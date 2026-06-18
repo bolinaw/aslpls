@@ -14,7 +14,7 @@ Execute all actions via private message: /msg <botnick> <command>
 
 COMMANDS<br>
 
-/msg <botnick> <command><br>
+/msg botnick command<br>
 
   register <Class>    - Create profile. Classes: Warrior, Mage, Rogue, Cleric, Paladin, Ranger, Necromancer, Bard<br>
   stats               - View your attributes, level, gold, gear, and pet<br>
