@@ -1,13 +1,13 @@
 <p>check it out XiRPG.tcl IRC Eggdrop Channel Game, active and working</p>
 
-<h3 style="color: blue;">irc.underx.org #idlerpg</h3>
-<h3 style="color: blue;">irc.pinoychat.fun #idlerpg</h3>
+<code>irc.underx.org #idlerpg</code>
+<pre>irc.pinoychat.fun #idlerpg</pre>
 
 <code>look for aslpls / asl_pls</code>
 
 <br><br>
 
-%%XiRPG CORE COMMAND ENGINE<br>%%
+**XiRPG CORE COMMAND ENGINE**<br>
 <code>Execute all actions via private message</code>
 
 COMMAND: &nbsp;&nbsp;&nbsp;<bold>/msg botnick command</bold><br><br><br>
