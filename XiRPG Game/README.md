@@ -10,7 +10,7 @@ look for aslpls / asl_pls
 
 XiRPG CORE COMMAND ENGINE 
 
-Execute all actions via private message: /msg <botnick> <command>
+Execute all actions via private message: /msg botnick command
 
 COMMANDS<br>
 
