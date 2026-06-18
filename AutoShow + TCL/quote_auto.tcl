@@ -1,13 +1,19 @@
-##################################################################
-# quote_auto.tcl by asl_pls @ irc.underx.org #aslpls			 #
-#																 #
-# Ensure required packages are loaded							 #
-# Prerequisites													 #
-#    - Make sure your IRC bot's shell has tls installed. 		 #
-#       You can usually install it via your package manager		 #
-#	   (e.g., sudo apt-get install tcl-tls).					 #
-#																 #
-##################################################################
+#####################################################################################
+#                      ____  ____  _     ____  _     ____ 	                        #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
+#                     | / \||    \| |   |  \/|| |   |    \	                        #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
+#                       asl_pls / irc.underx.org #aslpls    	                    #
+##################################################################################### 
+#             quote_auto.tcl by asl_pls @ irc.underx.org #aslpls			        #
+#																                    #
+#           Ensure required packages are loaded							            #
+#           Prerequisites													        #
+#             - Make sure your IRC bot's shell has tls installed. 		            #
+#               You can usually install it via your package manager		            #
+#																                    #
+#####################################################################################
 
 package require http
 package require tls
