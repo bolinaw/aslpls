@@ -7,10 +7,10 @@
 #                       asl_pls / irc.underx.org #aslpls    	                    #
 #####################################################################################
 #                                                                                   #
-# Eggdrop IRC Tarot Card Reading Script                                             #
-# tarot_offline.tcl by asl_pls @ irc.underx.org #aslpls                                     #
+#     Eggdrop IRC Tarot Card Reading Script                                         #
+#     tarot_offline.tcl by asl_pls @ irc.underx.org #aslpls                         #
 #                                                                                   #          
-# Commands: !tarot [nick]                                                           # 
+#     Commands: !tarot [nick]                                                       # 
 #                                                                                   # 
 #####################################################################################
 
