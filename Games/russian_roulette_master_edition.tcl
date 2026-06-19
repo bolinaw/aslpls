@@ -8,9 +8,9 @@
 #																														#
 #########################################################################################################################
 #																														#
-# 	russian_roulette_master_edition.tcl v1.0																					#
+# 	russian_roulette_master_edition.tcl v1.0																			#
 #																														#
-# 	The Russian Roulette Master Edition Game for Eggdrop IRC bots.															#
+# 	The Russian Roulette Master Edition Game for Eggdrop IRC bots.														#
 #																														#
 # 	Features: Persistent Cylinder, Multi-Bullets, Stats Tracking, Cooldowns, Auto-Invite,								#
 #           1v1 Duels with 5-turn Win conditions, Achievements, Special Tricks, Points Economy,							#
