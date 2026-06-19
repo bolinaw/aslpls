@@ -94,7 +94,7 @@ namespace eval ::ircweather {
         set uSign [expr {$units eq "metric" ? "°C" : "°F"}]
         set b "\002"
 
-        set out "\00306Current Weather\003 for \00303${cityName}, ${country}\003: [string totitle $desc] | "
+        set out "\00306\[Current Weather\]\003 for \00303${cityName}, ${country}\003: [string totitle $desc] | "
         append out "Temp: ${b}${temp}${uSign}${b} (Feels: ${feels}${uSign}) | "
         append out "Humidity: ${humidity}% | Air Quality: ${aqiStr}"
         return $out
@@ -116,7 +116,7 @@ namespace eval ::ircweather {
         set country [dict get $parsed city country]
         set forecastList [dict get $parsed list]
 
-        set out "\003043-Day Forecast\003 for \00312${cityName}, ${country}:\003"
+        set out "\00304\[3-Day Forecast\]\003 for \00312${cityName}, ${country}:\003"
         set targetIndices {8 16 24}
         set stepCount 1
 
