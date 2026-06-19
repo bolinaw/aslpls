@@ -1,16 +1,25 @@
-# ====================================================================
-# global_chan_antiflood.tcl by asl_pls irc.underx.org
-# A global firewall that protects the channel and bot from text floods.
-# ====================================================================
+#####################################################################################
+#                      ____  ____  _     ____  _     ____ 	                        #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
+#                     | / \||    \| |   |  \/|| |   |    \	                        #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
+#                       asl_pls / irc.underx.org #aslpls    	                    #
+#####################################################################################
+#                                                                                   #
+#                 global_chan_antiflood.tcl by asl_pls irc.underx.org               #
+#       A global firewall that protects the channel and bot from text floods.       # 
+#                                                                                   # 
+#####################################################################################
 
 namespace eval ::GlobalGuard {
     # ----------------------------------------------------------------
     # CONFIGURATION
     # ----------------------------------------------------------------
-    variable flood_lines  4     ;# Number of lines allowed...
-    variable flood_time   3     ;# ...within this many seconds.
-    variable punishment   "kick" ;# Action to take: "notice", "kick", or "kickban"
-    variable ban_time     5     ;# If kickban is chosen, ban duration in minutes
+    variable flood_lines  4         ;# Number of lines allowed...
+    variable flood_time   3         ;# ...within this many seconds.
+    variable punishment   "kick"    ;# Action to take: "notice", "kick", or "kickban"
+    variable ban_time     5         ;# If kickban is chosen, ban duration in minutes
 
     # Storage array for tracking user hit counters
     variable flood_history
