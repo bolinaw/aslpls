@@ -11,8 +11,8 @@
 # 	hangman_mod.tcl - Dynamic File-Based Hangman Game with Persistent Top Scores	#
 #																					#
 # 	Commands: 																		#
-#																					#
-#	!hangman start, !hangman stop, !hangman top, !hangman set <variable> <value>	#
+#	    !hangman start, !hangman stop, !hangman top                                 #
+#       !g <letters>, !hangman set <variable> <value>	                            # 
 #																					#
 #####################################################################################
 
