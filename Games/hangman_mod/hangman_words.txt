@@ -1,0 +1,6 @@
+eggdrop
+ircnet
+undernet
+quakenet
+scripting
+channels
