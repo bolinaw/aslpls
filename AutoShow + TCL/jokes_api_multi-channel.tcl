@@ -1,0 +1,105 @@
+#######################################################################
+#                 ____  ____  _     ____  _     ____ 	                #
+#                /  _ \/ ___\/ \   /  __\/ \   / ___\	                #
+#                | / \||    \| |   |  \/|| |   |    \	                #
+#                | |-||\___ || |_/\|  __/| |_/\\___ |	                #
+#                \_/ \|\____/\____/\_/   \____/\____/	                #
+#                   asl_pls / irc.underx.org #aslpls    	            #
+#	                                                                    #
+########################################################################
+# Automated HTTP JSON Joke Loop for Eggdrop                            #
+# Automatically posts a single-line joke to multiple channels.         #
+# joke_auto.tcl by asl_pls @ irc.underx.org #aslpls                    #
+########################################################################
+
+package require http
+package require tls
+package require json
+
+# Register the HTTPS protocol handler
+::http::register https 443 [list ::tls::socket -autoservername 1]
+
+# CONFIGURATION
+# Set the space-separated channels you want the jokes to post to:
+set joke_channels "#dumaguete #aslpls #familyfeud #christmas #trivia"
+
+# Set how often to post (in minutes)
+set joke_interval 30
+
+set jokeurl "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist"
+set joke_timeout 5000
+
+# Initialize the loop when the script finishes loading/rehashing
+if {![info exists joke_loop_started]} {
+    set joke_loop_started 1
+    utimer 10 [list auto_getjsonjoke]
+}
+
+proc auto_getjsonjoke {} {
+    global jokeurl joke_timeout joke_channels joke_interval
+
+    # 1. Schedule the NEXT joke to run in X minutes
+    timer $joke_interval [list auto_getjsonjoke]
+
+    # 2. Configure headers to ask for JSON data
+    set headers [list "User-Agent" "Eggdrop IRC Bot Joke Script" "Accept" "application/json"]
+
+    # 3. Safely make the HTTP request
+    if {[catch {
+        set tok [::http::geturl $jokeurl -headers $headers -timeout $joke_timeout]
+    } err]} {
+        putlog "Joke Timer Error: $err"
+        return
+    }
+
+    # Check the HTTP status
+    set status [::http::status $tok]
+    if {$status ne "ok"} {
+        putlog "Joke Timer HTTP Error: $status"
+        ::http::cleanup $tok
+        return
+    }
+
+    # Grab the raw JSON string data
+    set raw_json [::http::data $tok]
+    ::http::cleanup $tok
+
+    # Parse the JSON string into a Tcl dictionary
+    if {[catch {
+        set joke_dict [::json::json2dict $raw_json]
+    } err]} {
+        putlog "Joke Timer: Failed to parse JSON data."
+        return
+    }
+
+    # 4. Extract, flatten, and prepare the joke text
+    if {[dict exists $joke_dict "type"]} {
+        set type [dict get $joke_dict "type"]
+        set dynamic_joke ""
+        
+        if {$type eq "single"} {
+            set dynamic_joke [dict get $joke_dict "joke"]
+        } elseif {$type eq "twopart"} {
+            set setup [dict get $joke_dict "setup"]
+            set delivery [dict get $joke_dict "delivery"]
+            # Combine setup and delivery horizontally with a clean separator
+            set dynamic_joke "$setup \00304-->\003 $delivery"
+        }
+
+        if {$dynamic_joke ne ""} {
+            # Strip out any actual newline or carriage return characters just in case
+            set dynamic_joke [string map {"\r" "" "\n" " "} [string trim $dynamic_joke]]
+            
+            # 5. Loop through each target channel and send the joke
+            foreach chan [split $joke_channels] {
+                if {[validchan $chan] && [botonchan $chan]} {
+                    putquick "PRIVMSG $chan :$dynamic_joke"
+                } else {
+                    putlog "Joke Timer: Skipping $chan, I am not currently on it."
+                }
+            }
+        }
+    }
+}
+
+putlog "Loaded successfully: Automated 1-Line Jokes_auto.tcl by asl_pls @ irc.underx.org #aslpls (Multi-chan fix)"
