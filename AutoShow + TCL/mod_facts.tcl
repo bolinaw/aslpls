@@ -10,14 +10,9 @@
 # pop the script in your script folder and add #
 # source scripts/fact.tcl to your eggdrop conf #
 # file rehash / restart the bot.               #
-################################################
-#											   #	
-#       Update as of June 2026                 #
-#                                              #
-#  - Added in the script to show the output	   #
-#		    in multiple channels.			   #
-#		   (aslpls irc.underx.org)			   #
-#                                              #
+########## Update as of June 2026 ##############
+# Added and modified in the script that allow  #
+# to show in multiple channels.                #
 ################################################
 
 package require http
@@ -25,10 +20,10 @@ package require http
 ################################################
 #                Configuration                 #
 #                                              #
-# Allocate your channels here (space separated)#
+#  Allocate your channels here (space separated) #
 ################################################
 
-set channels "#aslpls #dumaguete"
+set channels "#aslpls #uae #bingo #buangons"
 
 #################################################
 # Random facts timer. change it according to    #
@@ -53,10 +48,11 @@ if {[lsearch -glob [utimers] "* fact *"] == -1} {
 }
 
 proc fact {} { 
+    # FIX: Added 'channels' to the global declaration list
     global channels time timer 
     set url "http://www.randomfunfacts.com/"
     
-    # Fetch the page with a catch to prevent the bot from crashing if the site is down
+    # Fetch the page safely
     if {[catch {set token [http::geturl $url -timeout 5000]} error]} {
         putlog "FunFacts Error: $error"
         if {[lsearch -glob [utimers] "* fact *"] == -1} { utimer $timer fact }
@@ -67,10 +63,10 @@ proc fact {} {
     http::cleanup $token
 
     if {[regexp {<i>(.*?)<\/i>} $page a fact_text]} {
-        # Loop through each channel in the list
+        # Loop through each channel in the global list
         foreach chan $channels { 
             if {[validchan $chan]} {
-                putserv "PRIVMSG $chan :Facts: $fact_text" 
+                putserv "PRIVMSG $chan :$fact_text" 
             }
         } 
     }
@@ -80,4 +76,4 @@ proc fact {} {
     } 
 }
 
-putlog "funfact.tcl 1.1 (Multi-Channel Random Fun Facts) Loaded."
+putlog "funfact.tcl 1.2 (Multi-Channel Random Fun Facts Fixed) Loaded."
