@@ -1,24 +1,24 @@
-#####################################################################################
-#                      ____  ____  _     ____  _     ____ 	                        #
-#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
-#                     | / \||    \| |   |  \/|| |   |    \	                        #
-#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
-#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
-#                       asl_pls / irc.underx.org #aslpls    	                    #
-#																					#
-#####################################################################################
-#																					#	
-# 	horoscope_aslpls.tcl for Eggdrop												#
-# 	Powered by API-Ninjas (api-ninjas.com/api/horoscope)							#
-#																					#
-# 	Features included:																#
-#   	- Resilient TLS 1.2/1.3 handling with spoofed User-Agent					#
-#   	- Per-User & Per-Channel Anti-Flood Matrix (Cooldowns)						#
-#   	- Automated Daily Channel Announcement (Cron Blast at 08:00 AM)				#
-#																					#
-#	Command: !horo <sign>															#
-#																					#
-#####################################################################################
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+########################################################################################### 
+#																						
+# 	horoscope_aslpls.tcl for Eggdrop												
+# 	Powered by API-Ninjas (api-ninjas.com/api/horoscope)							
+#																					
+# 	Features included:																
+#   	- Resilient TLS 1.2/1.3 handling with spoofed User-Agent					
+#   	- Per-User & Per-Channel Anti-Flood Matrix (Cooldowns)						
+#   	- Automated Daily Channel Announcement (Cron Blast at 08:00 AM)				
+#																					
+#	Command: !horo <sign>															
+#																					
+###########################################################################################
 
 package require http
 package require tls
