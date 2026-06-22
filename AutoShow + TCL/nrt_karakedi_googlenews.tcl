@@ -7,20 +7,21 @@
 ##                      asl_pls / irc.underx.org #aslpls    	                         ##
 ##                                                                               06/2026 ##
 ########################################################################################### 
-#																					      #
-#	Google news v0.3 by nrt (01 Dec 2015)											      #
-# 	04 Jan 2018 Updated GoogleNews Country links and added some more lines for		      #
-#			redirected link support by karakedi										      #
-#																					      #
-# 	ORIGINALLY BY: nrt & karakedi (Thank you, guys)									      #
-#																					      #
-#	06/2026	Google news v0.6 (Updated 2026 - Philippines Support & Bug Fixes)		      #
-#																					      #
-#	Commands: .chanset #channel +googlenews											      #
-#																					      #
-#	In the channel: .news on (enable the news in the channel)						      #
-#					.news (to show rss feed news in the channel)					      #
-#																					      #
+#											
+# Google news v0.3 by nrt (01 Dec 2015)					
+#
+# 04 Jan 2018 Updated GoogleNews Country links and added some more lines for redirected link support by karakedi
+#											
+# ORIGINALLY BY: nrt & karakedi (Thank you, guys)					
+#										
+# 06/2026
+#
+# Google news v0.6 (Updated 2026 - Philippines Support & Bug Fixes)
+#										
+# Commands: .chanset #channel +googlenews					
+#										
+# In the channel: .news on (enable the news in the channel) / .news (to show rss feed news in the channel)	
+#										
 ###########################################################################################
 
 package require tdom
