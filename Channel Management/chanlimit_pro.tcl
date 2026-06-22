@@ -1,24 +1,24 @@
-######################################################################################
-##                     ____  ____  _     ____  _     ____ 	                        ##
-##                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        ##
-##                    | / \||    \| |   |  \/|| |   |    \	                        ##
-##                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        ##
-##                    \_/ \|\____/\____/\_/   \____/\____/	                        ##
-##                      asl_pls / irc.underx.org #aslpls    	                    ##
-##                                                                          06/2026 ##
-######################################################################################
-# chanlimit_pro.tcl - Advanced Dynamic Channel Limit Script                          #  
-# Features: Multi-channel support, flood protection, and real-time activity logging. #
-# Nickname / Context: asl_pls | irc.underx.org #aslpls                               # 
-######################################################################################
-#                                                                                    #
-# Steps to Run:                                                                      #  
-# Save this full block as a .tcl file (e.g., scripts/chanlimit_pro.tcl).             #
-# Add source scripts/chanlimit_pro.tcl to your eggdrop.conf.                         #   
-# Rehash your bot (.rehash on the partyline).                                        #
-# Turn it on for your target channel by typing: .chanset #yourchannel +dynamiclimit  #
-#                                                                                    #
-######################################################################################
+###########################################################################################
+##                     ____  ____  _     ____  _     ____ 	                         ##
+##                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                         ##
+##                    | / \||    \| |   |  \/|| |   |    \	                         ##
+##                     | |-||\___ || |_/\|  __/| |_/\\___ |	                         ##
+##                    \_/ \|\____/\____/\_/   \____/\____/	                         ##
+##                      asl_pls / irc.underx.org #aslpls    	                         ##
+##                                                                               06/2026 ##
+########################################################################################### 
+# chanlimit_pro.tcl - Advanced Dynamic Channel Limit Script                               #  
+# Features: Multi-channel support, flood protection, and real-time activity logging.      #
+# Nickname / Context: asl_pls | irc.underx.org #aslpls                                    # 
+###########################################################################################
+#                                                                                         #
+# Steps to Run:                                                                           #  
+# Save this full block as a .tcl file (e.g., scripts/chanlimit_pro.tcl).                  #
+# Add source scripts/chanlimit_pro.tcl to your eggdrop.conf.                              #   
+# Rehash your bot (.rehash on the partyline).                                             #
+# Turn it on for your target channel by typing: .chanset #yourchannel +dynamiclimit       #
+#                                                                                         #
+###########################################################################################
 
 namespace eval ::ChanLimitPro {
     # --- CONFIGURATION ---
