@@ -1,35 +1,35 @@
-#########################################################################################################################
-#                     					 ____  ____  _     ____  _     ____ 	                        				#
-#                    					/  _ \/ ___\/ \   /  __\/ \   / ___\	                        				#
-#                     					| / \||    \| |   |  \/|| |   |    \	                        				#
-#                     					| |-||\___ || |_/\|  __/| |_/\\___ |	                        				#
-#                     					\_/ \|\____/\____/\_/   \____/\____/	                        				#
-#                       					asl_pls / irc.underx.org #aslpls    	                    				#
-#																														#
-#########################################################################################################################
-#																														#
-# 	russian_roulette_master_edition.tcl v1.0																			#
-#																														#
-# 	The Russian Roulette Master Edition Game for Eggdrop IRC bots.														#
-#																														#
-# 	Features: Persistent Cylinder, Multi-Bullets, Stats Tracking, Cooldowns, Auto-Invite,								#
-#           1v1 Duels with 5-turn Win conditions, Achievements, Special Tricks, Points Economy,							#
-#           Randomized Gory Kicks, Leveling System, and 3/5 Win Caps.													#
-#																														#
-# 	Commands: !roulette [bullets] [bet] | !rrstats [nick] | !rrtop | !challenge <nick> | !accept | !peek | !tilt		#
-#																														#
-#	Russian Roulette Master Edition v1.0 — Quick Play Guide																#
-#																														#
-#	Command,Action,Example																								#
-#																														#
-#	!rr or !roulette					-	Pull the trigger on a default 1-bullet chamber.								#
-#	!rr [bullets] [bet] | !rr 2 200		-	Load 1 to 5 bullets and bet your wallet points.,							#
-#	!challenge <nick>					-	Call out another player for a high-stakes 1v1 duel.,!challenge Joker		#
-#	!accept								-	Accept an incoming 1v1 duel challenge within 60 seconds.,!accept			#
-#	!rrstats [nick], !rrstats			-	View your (or someone else's) Level, XP, Wallet, and Streaks.				#
-#	!rrtop								-	Display the top Level rankings leaderboard and current Jackpot.,!rrtop		#
-#																														#
-#########################################################################################################################
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+########################################################################################### 
+#																														
+# 	russian_roulette_master_edition.tcl v1.0																			
+#																														
+# 	The Russian Roulette Master Edition Game for Eggdrop IRC bots.														
+#																														
+# 	Features: Persistent Cylinder, Multi-Bullets, Stats Tracking, Cooldowns, Auto-Invite,								
+#           1v1 Duels with 5-turn Win conditions, Achievements, Special Tricks, Points Economy,							
+#           Randomized Gory Kicks, Leveling System, and 3/5 Win Caps.													
+#																														
+# 	Commands: !roulette [bullets] [bet] | !rrstats [nick] | !rrtop | !challenge <nick> | !accept | !peek | !tilt		
+#																														
+#	Russian Roulette Master Edition v1.0 — Quick Play Guide																
+#																														
+#	Command,Action,Example																								
+#																														
+#	!rr or !roulette					-	Pull the trigger on a default 1-bullet chamber.								
+#	!rr [bullets] [bet] | !rr 2 200		-	Load 1 to 5 bullets and bet your wallet points.,							
+#	!challenge <nick>					-	Call out another player for a high-stakes 1v1 duel.,!challenge Joker		
+#	!accept								-	Accept an incoming 1v1 duel challenge within 60 seconds.,!accept			
+#	!rrstats [nick], !rrstats			-	View your (or someone else's) Level, XP, Wallet, and Streaks.				
+#	!rrtop								-	Display the top Level rankings leaderboard and current Jackpot.,!rrtop		
+#																														
+##############################################################################################
 
 
 namespace eval ::Roulette {

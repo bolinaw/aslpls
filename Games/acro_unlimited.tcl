@@ -1,28 +1,28 @@
-#####################################################################################
-#                      ____  ____  _     ____  _     ____ 	                        #
-#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
-#                     | / \||    \| |   |  \/|| |   |    \	                        #
-#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
-#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
-#                       asl_pls / irc.underx.org #aslpls    	                    #
-#																					#
-#####################################################################################
-#																					#
-# 	acro_unlimited.tcl - v.3 Automated Infinite Acrophobia Game Script				#
-#																					#
-# 	Changes:																		#
-# 		- Run continuously without manual start commands.							#
-# 		- Spits out 3 hints at the start of the submission round (spaced 10s apart).#
-# 		- Automatically cycles to the next game after a cooldown period.			#
-#																					#
-# 	Commands:																		#
-#																					#
-# 		!acro start   - Starts the continuous loop (Admin only).					#
-# 		!acro stop    - Stops the continuous loop (Admin only).						#
-# 		/msg bot acro - Submits your acronym phrase.								#
-# 		/msg bot vote - Casts your vote.											#
-#																					#
-#####################################################################################
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+########################################################################################### 
+#																					
+# 	acro_unlimited.tcl - v.3 Automated Infinite Acrophobia Game Script				
+#																					
+# 	Changes:																		
+# 		- Run continuously without manual start commands.							
+# 		- Spits out 3 hints at the start of the submission round (spaced 10s apart).
+# 		- Automatically cycles to the next game after a cooldown period.			
+#																					
+# 	Commands:																		
+#																					
+# 		!acro start   - Starts the continuous loop (Admin only).					
+# 		!acro stop    - Stops the continuous loop (Admin only).						
+# 		/msg bot acro - Submits your acronym phrase.								
+# 		/msg bot vote - Casts your vote.											
+#																					
+#############################################################################################
 
 namespace eval ::Acro {
     # --- CONFIGURATION ---
