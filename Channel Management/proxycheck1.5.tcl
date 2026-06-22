@@ -20,7 +20,7 @@
 
 namespace eval ::ProxyCheck {
     # --- CONFIGURATION ---
-    variable apiKey "4041a255f156f4e4a58715ae47352fe1ff741982f8ebad3f02ef497533be9320"
+    variable apiKey "YOUR-API-KEY-HERE" #Proxycheck.io
     variable cmdToken "!"
     variable userLevel "-" ;# Access level required (e.g., '-' for all, 'm' for masters)
 
