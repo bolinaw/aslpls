@@ -1,22 +1,25 @@
-########################################################################################
-#                      ____  ____  _     ____  _     ____ 	                           #
-#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                           #
-#                     | / \||    \| |   |  \/|| |   |    \	                           #
-#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                           #
-#                     \_/ \|\____/\____/\_/   \____/\____/	                           #
-#                       asl_pls / irc.underx.org #aslpls    	                       #
-########################################################################################
-# userinfo_pro.tcl - Channel & User Info Script                                        #
-# Features: Idle time, mutual channels, channel flags, and last-seen activity tracker. #   
-# Nickname / Context: asl_pls | irc.underx.org #aslpls                                 #
-########################################################################################
-#                                                                                      #
-#     Steps to Run:                                                                    #  
-#     Save this full block as a .tcl file (e.g., scripts/userinfo.tcl).                #
-#     Add source scripts/userinfo.tcl to your eggdrop.conf.                            #   
-#     Rehash your bot (.rehash on the partyline).                                      #
-#                                                                                      #
-########################################################################################
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+###########################################################################################
+# 
+# userinfo_pro.tcl - Channel & User Info Script                                        
+# Features: Idle time, mutual channels, channel flags, and last-seen activity tracker.    
+# Nickname / Context: asl_pls | irc.underx.org #aslpls                                 
+#
+###########################################################################################
+#                                                                                      
+#     Steps to Run:                                                                      
+#     Save this full block as a .tcl file (e.g., scripts/userinfo.tcl).                
+#     Add source scripts/userinfo.tcl to your eggdrop.conf.                               
+#     Rehash your bot (.rehash on the partyline).                                      
+#                                                                                      
+###########################################################################################
 
 bind pub - !info pub_userinfo
 bind pubm - * pubm_track_activity

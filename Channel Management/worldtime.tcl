@@ -1,23 +1,24 @@
-#####################################################################################
-#                      ____  ____  _     ____  _     ____ 	                        #
-#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
-#                     | / \||    \| |   |  \/|| |   |    \	                        #
-#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
-#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
-#                       asl_pls / irc.underx.org #aslpls    	                    #
-##################################################################################### 
-#                                                                                   #
-#     Eggdrop World Time Tracker Script by asl_pls @ irc.underx.org #aslpls         #
-#     Allows users to check local times around the world in 12-hour AM/PM format.   #
-#                                                                                   # 
-#     Commands (Public):                                                            #            
-#       !time <country/city>      - Shows current local time for that zone          #  
-#                                                                                   # 
-#     Management Commands (Requires Global or Local Op 'o'):                        #
-#       !settime <name> <tz>      - Adds/Updates a timezone mapping                 #
-#       !deltime <name>           - Removes a country/city from mapping             #
-#                                                                                   # 
-#####################################################################################
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+###########################################################################################  
+#                                                                                   
+#     Eggdrop World Time Tracker Script by asl_pls @ irc.underx.org #aslpls         
+#     Allows users to check local times around the world in 12-hour AM/PM format.   
+#                                                                                    
+#     Commands (Public):                                                                        
+#       !time <country/city>      - Shows current local time for that zone            
+#                                                                                    
+#     Management Commands (Requires Global or Local Op 'o'):                        
+#       !settime <name> <tz>      - Adds/Updates a timezone mapping                 
+#       !deltime <name>           - Removes a country/city from mapping             
+#                                                                                    
+############################################################################################
 
 namespace eval ::WorldTime {
     # File to save your custom country mappings so they survive bot restarts

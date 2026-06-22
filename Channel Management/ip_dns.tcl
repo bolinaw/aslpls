@@ -1,23 +1,23 @@
-#####################################################################################
-#                      ____  ____  _     ____  _     ____ 	                        #
-#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
-#                     | / \||    \| |   |  \/|| |   |    \	                        #
-#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
-#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
-#                       asl_pls / irc.underx.org #aslpls    	                    #
-#																					#
-#####################################################################################
-#																					#
-# 	enhanced_ip_dns.tcl                                                         	#
-# 	An upgraded Eggdrop script for IP, DNS, and Reverse DNS lookups.           		#
-# 	Includes built-in flood protection and localized time/maps.               		#
-#                                                                             		#
-# 	Commands:                                                                   	#
-#   	!ip <IP Address>                                                          	#
-#   	!dns <Domain> [Record Type]                                               	#
-#   	!rdns <IP Address>                                                        	#
-#																					#
-#####################################################################################
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+########################################################################################### 
+#																					
+# 	enhanced_ip_dns.tcl                                                         	
+# 	An upgraded Eggdrop script for IP, DNS, and Reverse DNS lookups.           		
+# 	Includes built-in flood protection and localized time/maps.               		
+#                                                                             		
+# 	Commands:                                                                   	
+#   	!ip <IP Address>                                                          	
+#   	!dns <Domain> [Record Type]                                               	
+#   	!rdns <IP Address>                                                        	
+#																					
+############################################################################################
 
 package require http
 package require tls

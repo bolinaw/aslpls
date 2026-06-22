@@ -1,29 +1,32 @@
-###############################################################################
-#                      ____  ____  _     ____  _     ____ 	                  #
-#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                  #
-#                     | / \||    \| |   |  \/|| |   |    \	                  #
-#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                  #
-#                     \_/ \|\____/\____/\_/   \____/\____/	                  #
-#                       asl_pls / irc.underx.org #aslpls    	              #
-###############################################################################
-# underx.tcl by asl_pls @ irc.underx.org #aslpls                              #
-# An Eggdrop script for UnderX Service Management & Authentication.           #
-###############################################################################
-#                                                                             #
-#  How to use it in your channels:                                            #
-#  The script automatically detects the channel you are typing in so you      #
-#    don't have to keep writing #channel. Make sure your Eggdrop is logged    #
-#    in as a master or manager in X for the specific channel to perform these # 
-#    commands.                                                                #
-#                                                                             #
-#  To add a user:                 .xadd TargetUser 100                        #
-#  To remove a user:              .xdel TargetUser                            #
-#  To change access level:        .xlevel TargetUser 150                      #  
-#  To change automode to OP:      .xmode TargetUser op                        #
-#  To change automode to VOICE:   .xmode TargetUser voice                     #   
-#  To turn off automode:          .xmode TargetUser none                      #  
-#                                                                             #   
-###############################################################################
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+########################################################################################### 
+#
+# underx.tcl by asl_pls @ irc.underx.org #aslpls                              
+# An Eggdrop script for UnderX Service Management & Authentication.           
+#
+############################################################################################
+#                                                                             
+#  How to use it in your channels:                                            
+#  The script automatically detects the channel you are typing in so you      
+#    don't have to keep writing #channel. Make sure your Eggdrop is logged    
+#    in as a master or manager in X for the specific channel to perform these  
+#    commands.                                                                
+#                                                                             
+#  To add a user:                 .xadd TargetUser 100                        
+#  To remove a user:              .xdel TargetUser                            
+#  To change access level:        .xlevel TargetUser 150                        
+#  To change automode to OP:      .xmode TargetUser op                        
+#  To change automode to VOICE:   .xmode TargetUser voice                        
+#  To turn off automode:          .xmode TargetUser none                        
+#                                                                                
+#############################################################################################
 
 # --- Configuration ---
 namespace eval ::UnderX {

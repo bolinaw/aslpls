@@ -7,9 +7,9 @@
 ##                      asl_pls / irc.underx.org #aslpls    	                         ##
 ##                                                                               06/2026 ##
 ########################################################################################### 
-# admin_underx.tcl by asl_pls @ irc.underx.org #aslpls                                    #
-# Eggdrop Administrative and UnderX Service Automation Script                             #
-# Updated with extended channel modes and X modinfo capabilities.                         #
+# admin_underx.tcl by asl_pls @ irc.underx.org #aslpls                                    
+# Eggdrop Administrative and UnderX Service Automation Script                             
+# Updated with extended channel modes and X modinfo capabilities.                         
 ###########################################################################################
 
 namespace eval ::AdminX {
