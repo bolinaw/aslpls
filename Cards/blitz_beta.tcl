@@ -1,23 +1,24 @@
-#####################################################################################
-#                      ____  ____  _     ____  _     ____ 	                        #
-#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
-#                     | / \||    \| |   |  \/|| |   |    \	                        #
-#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
-#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
-#                       asl_pls / irc.underx.org #aslpls    	                    #
-#####################################################################################
-#																					#
-# 	Blitz.tcl (31 / Scat) Eggdrop IRC Game Script									#
-# 	Version: 1.0																	#		
-# 	Description: A fully automated IRC card game for 2-12 players.					#
-#              Players draw and discard to get their 3-card hand as close to 		#
-#              31 points in a single suit as possible.								#
-#																					#
-#    How to play the game:                                                          # 
-#        ->> https://frugalfun4boys.com/how-to-play-blitz-card-game/                #
-#        ->> https://www.youtube.com/watch?v=c2V6U3MbbaY                            #
-#                                                                                   #    
-#####################################################################################
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+########################################################################################### 
+#																					
+# 	Blitz.tcl (31 / Scat) Eggdrop IRC Game Script									
+# 	Version: 1.0																			
+# 	Description: A fully automated IRC card game for 2-12 players.					
+#              Players draw and discard to get their 3-card hand as close to 		
+#              31 points in a single suit as possible.								
+#																					
+#    How to play the game:                                                           
+#        ->> https://frugalfun4boys.com/how-to-play-blitz-card-game/                
+#        ->> https://www.youtube.com/watch?v=c2V6U3MbbaY                            
+#                                                                                       
+############################################################################################
 
 namespace eval ::Blitz {
     # --- Configuration ---

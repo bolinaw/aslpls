@@ -1,45 +1,46 @@
-#####################################################################################
-#                      ____  ____  _     ____  _     ____ 	                        #
-#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
-#                     | / \||    \| |   |  \/|| |   |    \	                        #
-#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
-#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
-#                       asl_pls / irc.underx.org #aslpls    	                    #
-#####################################################################################
-#																					#
-# cheat.tcl - Cheat / Bullshit IRC Card Game for Eggdrop							#
-# Version 1.0 (2026)																#
-#																					#
-#	How to Play in the Channel														#	
-#																					#	
-#	Start a game: Type !cheat in the channel.										#
-#																					#	
-#	Join the game: Other users type !join (Up to 13 players total, minimum 3).		#
-#																					#
-#	Check your hand: The bot will automatically notice you your hand, but you 		#
-#		can type !cards at any time to see it again.								#
-#																					#
-#	Play your turn: When it's your turn, the bot tells you what rank you 			#
-#		must claim to play.															#
-#																					#	
-#	If the bot says: It is your turn. You must play Kings.							#
-#																					#
-#	You type: !play K K (if you are dropping two cards and claiming they are Kings).#
-#		You can bluff and drop a 5 and a 7, but you must type !play <the ranks in 	#
-#		your hand you are physically putting down>. The bot translates it to the	#
-#		current claim target automatically.											#	
-#																					#
-#	Call "Cheat": If another player thinks you lied about what cards you put down, 	#
-#		they type !cheat in the channel before the next player takes a turn. If 	#
-#		you were lying, you take the center pile. If you were telling the truth, .	#
-#		the accuser takes the pile!													#
-#																					#	
-#	How to play: https://www.youtube.com/watch?v=ajVs_z8yLdk						#
-#																					#
-#																					#		
-#	Commands: !cheat [start the game] \ !cheat stop [stop the game]					#
-#																					#
-#####################################################################################
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+########################################################################################### 
+#																					
+# cheat.tcl - Cheat / Bullshit IRC Card Game for Eggdrop							
+# Version 1.0 (2026)																
+#																					
+#	How to Play in the Channel															
+#																						
+#	Start a game: Type !cheat in the channel.										
+#																						
+#	Join the game: Other users type !join (Up to 13 players total, minimum 3).		
+#																					
+#	Check your hand: The bot will automatically notice you your hand, but you 		
+#		can type !cards at any time to see it again.								
+#																					
+#	Play your turn: When it's your turn, the bot tells you what rank you 			
+#		must claim to play.															
+#																						
+#	If the bot says: It is your turn. You must play Kings.							
+#																					
+#	You type: !play K K (if you are dropping two cards and claiming they are Kings).
+#		You can bluff and drop a 5 and a 7, but you must type !play <the ranks in 	
+#		your hand you are physically putting down>. The bot translates it to the	
+#		current claim target automatically.												
+#																					
+#	Call "Cheat": If another player thinks you lied about what cards you put down, 	
+#		they type !cheat in the channel before the next player takes a turn. If 	
+#		you were lying, you take the center pile. If you were telling the truth, .	
+#		the accuser takes the pile!													
+#																						
+#	How to play: https://www.youtube.com/watch?v=ajVs_z8yLdk						
+#																					
+#																							
+#	Commands: !cheat [start the game] \ !cheat stop [stop the game]					
+#																					
+##############################################################################################
 
 namespace eval ::Cheat {
     # --- Configuration ---
