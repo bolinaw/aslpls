@@ -1,26 +1,26 @@
-#####################################################################################
-#                      ____  ____  _     ____  _     ____ 	                        #
-#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                        #
-#                     | / \||    \| |   |  \/|| |   |    \	                        #
-#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                        #
-#                     \_/ \|\____/\____/\_/   \____/\____/	                        #
-#                       asl_pls / irc.underx.org #aslpls    	                    #
-#																					#
-#####################################################################################
-#																					#
-#																					#
-# 	jokes_icanhazdadjoke.tcl														#
-#		- Eggdrop script to fetch random jokes from an API with automation			#
-#																					#
-#																					#
-# 	Requires: Tcl 8.5+ and the 'json' package (usually in tcllib)					#
-#																					#
-#																					#
-#	On Debian/Ubuntu Linux:		sudo apt-get install tcllib							#
-#	On CentOS/RHEL: 			sudo yum install tcllib								#
-#																					#
-#																					#
-#####################################################################################
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+########################################################################################### 
+#																					
+#																					
+# 	jokes_icanhazdadjoke.tcl														
+#		- Eggdrop script to fetch random jokes from an API with automation			
+#																					
+#																					
+# 	Requires: Tcl 8.5+ and the 'json' package (usually in tcllib)					
+#																					
+#																					
+#	On Debian/Ubuntu Linux:		sudo apt-get install tcllib							
+#	On CentOS/RHEL: 			sudo yum install tcllib								
+#																					
+#																					
+###########################################################################################
 
 package require http
 package require json
