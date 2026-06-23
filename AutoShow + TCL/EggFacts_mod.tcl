@@ -76,4 +76,4 @@ proc fact {} {
     } 
 }
 
-putlog "funfact.tcl 1.2 (Multi-Channel Random Fun Facts Fixed) Loaded."
+putlog "EggFacts_mod.tcl 1.2 (Multi-Channel Random Fun Facts Fixed) Loaded."
