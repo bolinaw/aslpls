@@ -8,7 +8,7 @@
 ##                                                                               06/2026 ##
 ########################################################################################### 
 #                                                                                          
-#             x-random_topics.tcl by asl_pls @ irc.underx.org #aslpls                     
+#            EggChannelRandomTopics.tcl by asl_pls @ irc.underx.org #aslpls                     
 #                     Eggdrop Random Channel Topic Rotator                                  
 #                                                                                          
 #             Features:                                                                   
@@ -70,5 +70,5 @@ namespace eval ::topic_rotator {
         }
     }
 
-    putlog "x-random_topics.tcl loaded successfully. Target: $target_chan (Every 5 hours) by asl_pls"
+    putlog "EggChannelRandomTopics.tcl loaded successfully. Target: $target_chan (Every 5 hours) by asl_pls"
 }
