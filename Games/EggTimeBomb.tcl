@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #
-# EggTimeBomb.tcl - Added Dead Man's Switch & EMP Scrambling
+# EggTimeBomb.tcl v3.0 - Added Dead Man's Switch & EMP Scrambling
 # Usage: !timebomb <nick> | !cut <color> | !pass <nick> | !buy <tool> | !deadman | !bombstats
 #
 ########################################################################################### 
