@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #                                                                                   
-#                 global_chan_antiflood.tcl by asl_pls irc.underx.org               
+#                EggChan_antiflood.tcl by asl_pls irc.underx.org               
 #       A global firewall that protects the channel and bot from text floods.        
 #                                                                                    
 ###########################################################################################
