@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #
-# underx.tcl by asl_pls @ irc.underx.org #aslpls                              
+# EggUnderx.tcl by asl_pls @ irc.underx.org #aslpls                              
 # An Eggdrop script for UnderX Service Management & Authentication.           
 #
 ############################################################################################
@@ -138,4 +138,4 @@ proc ::UnderX::pub_xmode {nick uhost hand chan arg} {
     putquick "NOTICE $nick :Sent automode update ($mode_type) to X for $target_user on $chan."
 }
 
-putlog "Successfully loaded underx.tcl with UnderX by asl_pls @ irc.underx.org #aslpls"
+putlog "Successfully loaded EggUnderx.tcl with UnderX by asl_pls @ irc.underx.org #aslpls"
