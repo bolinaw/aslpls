@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																					
-#     AI IRC Channel Companion Tcl Script												
+#     EggAI_openrouter.tcl AI IRC Channel Companion Tcl Script												
 #     Uses OpenRouter's free tier API to talk in an IRC channel						
 #     Includes a 15-minute channel announcement reminder							
 #																					
@@ -155,4 +155,4 @@ if {![info exists ::AIChat::timer_running]} {
     timer 15 [namespace current]::start_announcement_timer
 }
 
-putlog "openrouter_ai.tcl AI IRC Companion by asl_pls (with 15m announcement) loaded successfully."
+putlog "EggAI_openrouter.tcl AI IRC Companion by asl_pls (with 15m announcement) loaded successfully."
