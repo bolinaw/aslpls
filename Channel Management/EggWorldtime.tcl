@@ -150,5 +150,5 @@ namespace eval ::WorldTime {
 
     # Initialize
     load_zones
-    putlog "Loaded: World Time Tracker Script (12h format) by asl_pls @ irc.underx.org"
+    putlog "Loaded: EggWorldtime.tcl World Time Tracker Script (12h format) by asl_pls @ irc.underx.org"
 }
