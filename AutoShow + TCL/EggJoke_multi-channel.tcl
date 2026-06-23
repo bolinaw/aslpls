@@ -10,7 +10,7 @@
 #
 # Automated HTTP JSON Joke Loop for Eggdrop                            
 # Automatically posts a single-line joke to multiple channels.         
-# joke_auto.tcl by asl_pls @ irc.underx.org #aslpls                    
+# EggJoke_multi-channel.tcl by asl_pls @ irc.underx.org #aslpls                    
 #
 ###########################################################################################
 
@@ -104,4 +104,4 @@ proc auto_getjsonjoke {} {
     }
 }
 
-putlog "Loaded successfully: Automated 1-Line Jokes_auto.tcl by asl_pls @ irc.underx.org #aslpls (Multi-chan fix)"
+putlog "Loaded successfully: Automated 1-Line EggJoke_multi-channel.tcl by asl_pls @ irc.underx.org #aslpls (Multi-chan fix)"
