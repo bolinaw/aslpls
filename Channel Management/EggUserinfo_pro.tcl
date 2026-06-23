@@ -8,7 +8,7 @@
 #                                                                                         #
 ###########################################################################################
 # 
-# userinfo_pro.tcl - Channel & User Info Script                                        
+# EggUserinfo_pro.tcl - Channel & User Info Script                                        
 # Features: Idle time, mutual channels, channel flags, and last-seen activity tracker.    
 # Nickname / Context: asl_pls | irc.underx.org #aslpls                                 
 #
@@ -125,4 +125,4 @@ proc pub_userinfo {nick uhost hand chan arg} {
     return 1
 }
 
-putlog "Loaded: Channel & User Info Script v2.3 by asl_pls @ irc.underx.org"
+putlog "Loaded: EggUserinfo_pro.tcl Channel & User Info Script v2.3 by asl_pls @ irc.underx.org"
