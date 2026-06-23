@@ -8,7 +8,7 @@
 #							
 ##############################################################
 #
-# 	EggNews.tcl by asl_pls 
+# 	EggGoogleNews.tcl by asl_pls 
 #	Google News RSS with Custom Minute Timer & TinyURL Support
 #
 # 	Features:
