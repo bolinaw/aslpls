@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #                                                                                   
-#         guess_multiround.tcl by asl_pls @ irc.underx.org #aslpls                   
+#         EggGuess_beta.tcl by asl_pls @ irc.underx.org #aslpls                   
 #         Robust Multi-round guessing game with flawless file saving.               
 #         Usage: !startguess [rounds] | !guess <number> | !top                      
 #                                                                                    
