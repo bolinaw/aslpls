@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																					
-# 	Blitz.tcl (31 / Scat) Eggdrop IRC Game Script									
+# 	EggBlitz_beta.tcl (31 / Scat) Eggdrop IRC Game Script									
 # 	Version: 1.0																			
 # 	Description: A fully automated IRC card game for 2-12 players.					
 #              Players draw and discard to get their 3-card hand as close to 		
@@ -366,5 +366,5 @@ namespace eval ::Blitz {
         catch {killutimer $join_timer_id}
     }
 
-    putlog "Blitz.tcl Card Game Script asl_pls irc.underx.org !Loaded Successfully."
+    putlog "EggBlitz_beta.tcl Card Game Script asl_pls irc.underx.org !Loaded Successfully."
 }
