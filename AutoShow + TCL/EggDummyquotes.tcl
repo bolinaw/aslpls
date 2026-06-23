@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																					
-# quote_dummyjson.tcl - Eggdrop script to fetch random quotes via DummyJSON API		
+# EggDummyquotes.tcl - Eggdrop script to fetch random quotes via DummyJSON API		
 # Requires: tls and http packages													
 #																					
 # Command: !quote 	/  Autoshow every 10 minutes									
@@ -92,4 +92,4 @@ namespace eval ::ircquotes {
     }
 }
 
-putlog "Loaded: quote_dummyjson.tcl Script / asl_pls irc.underx.org #aslpsl (Trigger: !quote | Interval: 10m)"
+putlog "Loaded: EggDummyquotes.tcl Script / asl_pls irc.underx.org #aslpsl (Trigger: !quote | Interval: 10m)"
