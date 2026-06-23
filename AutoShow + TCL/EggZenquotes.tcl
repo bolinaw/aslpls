@@ -8,12 +8,12 @@
 #                                                                                         #
 ########################################################################################### 
 #
-#             quote_zenquotes.tcl by asl_pls @ irc.underx.org #aslpls		        
+#    EggZenquotes.tcl by asl_pls @ irc.underx.org #aslpls		        
 #																                    
-#           Ensure required packages are loaded							            
-#           Prerequisites													        
-#             - Make sure your IRC bot's shell has tls installed. 		            
-#               You can usually install it via your package manager		            
+#    Ensure required packages are loaded							            
+#    Prerequisites													        
+#     - Make sure your IRC bot's shell has tls installed. 		            
+#      You can usually install it via your package manager		            
 #																                    
 ###########################################################################################
 
@@ -116,5 +116,5 @@ namespace eval ::AutoQuoteBot {
         }
     }
     
-    putlog "AutoQuote Script loaded. $targetChan by asl_pls @ irc.underx.org #aslpls."
+    putlog "EggZenquotes.tcl Script loaded. $targetChan by asl_pls @ irc.underx.org #aslpls."
 }
