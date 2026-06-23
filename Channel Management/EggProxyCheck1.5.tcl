@@ -154,5 +154,5 @@ namespace eval ::ProxyCheck {
         }
     }
 
-    putlog "Loaded: Proxycheck.io IP & Nick Checker Script v1.5"
+    putlog "Loaded: EggProxyCheck1.5.tcl Proxycheck.io IP & Nick Checker Script v1.5"
 }
