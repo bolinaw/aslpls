@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																					
-# cheat.tcl - Cheat / Bullshit IRC Card Game for Eggdrop							
+# EggCheat_beta.tcl - Cheat / Bullshit IRC Card Game for Eggdrop							
 # Version 1.0 (2026)																
 #																					
 #	How to Play in the Channel															
@@ -392,5 +392,5 @@ namespace eval ::Cheat {
         array set hands {}
     }
 
-    putlog "Cheat.tcl / Bullshit Engine v1.0 by asl_pls irc.underx.org Loaded successfully."
+    putlog "EggCheat_beta.tcl / Bullshit Engine v1.0 by asl_pls irc.underx.org Loaded successfully."
 }
