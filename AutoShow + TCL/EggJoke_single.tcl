@@ -10,7 +10,7 @@
 #																					
 # 		Automated HTTP JSON Joke Loop for Eggdrop                            		
 # 		Automatically posts a single-line joke to a channel every 5 minutes. 		
-# 		joke_api.tcl by asl_pls @ irc.underx.org #aslpls                    		
+# 		EggJoke_single.tcl by asl_pls @ irc.underx.org #aslpls                    		
 #																					
 ###########################################################################################
 
@@ -102,4 +102,4 @@ proc auto_getjsonjoke {} {
     }
 }
 
-putlog "Loaded successfully: Automated joke_api.tcl by asl_pls @ irc.underx.org"
+putlog "Loaded successfully: Automated EggJoke_single.tcl by asl_pls @ irc.underx.org"
