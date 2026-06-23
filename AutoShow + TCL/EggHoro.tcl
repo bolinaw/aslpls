@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																						
-# 	horoscope_aslpls.tcl for Eggdrop												
+# 	EggHoro.tcl for Eggdrop												
 # 	Powered by API-Ninjas (api-ninjas.com/api/horoscope)							
 #																					
 # 	Features included:																
@@ -163,4 +163,4 @@ namespace eval ::horoscope {
     }
 }
 
-putlog "Loaded successfully: Horoscope API Script (With Flood Matrix & Daily Cron)"
+putlog "Loaded successfully: EggHoro.tcl API Script (With Flood Matrix & Daily Cron)"
