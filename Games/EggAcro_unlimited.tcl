@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																					
-# 	acro_unlimited.tcl - v.3 Automated Infinite Acrophobia Game Script				
+# 	EggAcro_unlimited.tcl - v.3 Automated Infinite Acrophobia Game Script				
 #																					
 # 	Changes:																		
 # 		- Run continuously without manual start commands.							
@@ -312,6 +312,6 @@ proc ::Acro::end_voting {} {
         utimer $delay_game [namespace current]::start_round
     }
 	
-	putlog "acro_unlimited.tcl - Automated Infinite Acrophobia Game Script $targetChan."
+	putlog "EggAcro_unlimited.tcl - Automated Infinite Acrophobia Game Script $targetChan."
 	
 }
