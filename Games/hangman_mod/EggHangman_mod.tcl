@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																					
-# 	hangman_mod.tcl - Dynamic File-Based Hangman Game with Persistent Top Scores	
+# 	EggHangman_mod.tcl - Dynamic File-Based Hangman Game with Persistent Top Scores	
 #																					
 # 	Commands: 																		
 #	    !hangman start, !hangman stop, !hangman top                                 
@@ -318,4 +318,4 @@ namespace eval ::Hangman {
     }
 }
 
-putlog "Successfully loaded: Hangman_mod.tcl by asl_pls irc.underx.org"
+putlog "Successfully loaded: EggHangman_mod.tcl by asl_pls irc.underx.org"
