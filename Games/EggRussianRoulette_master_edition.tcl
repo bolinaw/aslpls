@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																														
-# 	russian_roulette_master_edition.tcl v1.0																			
+# 	EggRussianRoulette_master_edition.tcl v1.0																			
 #																														
 # 	The Russian Roulette Master Edition Game for Eggdrop IRC bots.														
 #																														
@@ -470,5 +470,5 @@ namespace eval ::Roulette {
     }
 
     init
-    putlog "Loaded: Russian Roulette Master Edition v1.0 by asl_pls irc.underx.org"
+    putlog "Loaded: EggRussianRoulette_master_edition.tcl v1.0 by asl_pls irc.underx.org"
 }
