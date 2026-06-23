@@ -9,7 +9,7 @@
 ########################################################################################### 
 #																					
 #																					
-# 	jokes_icanhazdadjoke.tcl														
+# 	EggJoke_icanhazdadjoke.tcl														
 #		- Eggdrop script to fetch random jokes from an API with automation			
 #																					
 #																					
@@ -112,5 +112,5 @@ namespace eval ::JokeBot {
         timer $post_interval [namespace current]::timer_loop
     }
 
-    putlog "Loaded jokes_icanhazdadjoke.tcl Script (Trigger: $cmd | Auto-post: every $post_interval mins to $auto_chans)"
+    putlog "Loaded EggJoke_icanhazdadjoke.tcl Script (Trigger: $cmd | Auto-post: every $post_interval mins to $auto_chans)"
 }
