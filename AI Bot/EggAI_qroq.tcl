@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																																										
-#     groq_ai.tcl by asl_pls @ irc.underx.org #aslpls								
+#     EggAI_qroq.tcl by asl_pls @ irc.underx.org #aslpls								
 #     AI IRC Channel Companion Tcl Script															
 #     Uses Groq API to talk in an IRC channel										
 #     Includes a 15-minute channel announcement reminder								
@@ -157,4 +157,4 @@ if {![info exists ::AIChat::timer_running]} {
     timer 15 [namespace current]::start_announcement_timer
 }
 
-putlog "groq_ai.tcl AI IRC Companion (Groq API)by asl_pls @ irc.underx.org #aslpls loaded successfully."
+putlog "EggAI_qroq.tcl AI IRC Companion (Groq API)by asl_pls @ irc.underx.org #aslpls loaded successfully."
