@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #                                                                                   
-#     tarot_online.tcl - Eggdrop Tarot Script                                        
+#     EggTarot-online.tcl - Eggdrop Tarot Script                                        
 #                                                                                    
 #     Description: Uses tarotapi.dev to pull random cards. Fixed hanging state bug.    
 #     Commands:    !tarot                                                            
@@ -108,4 +108,4 @@ namespace eval ::tarotv2 {
     }
 }
 
-putlog "Loaded: Tarot_Online.tcl Card Reading by asl_pls irc.underx.org #aslpls"
+putlog "Loaded: EggTarot-online.tcl Card Reading by asl_pls irc.underx.org #aslpls"
