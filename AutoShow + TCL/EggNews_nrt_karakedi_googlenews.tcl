@@ -16,7 +16,7 @@
 #										
 # 06/2026
 #
-# Google news v0.6 (Updated 2026 - Philippines Support & Bug Fixes)
+# EggNews_nrt_karakedi_googlenews.tcl v0.6 (Updated 2026 - Philippines Support & Bug Fixes)
 #										
 # Commands: .chanset #channel +googlenews					
 #										
@@ -292,4 +292,4 @@ proc Google:News {args} {
 	return 0
 }
 
-putlog "Google News Script Fully Fixed by \[ nrt & karakedi \] Loaded - Region: Philippines by \[ asl_pls \]."
+putlog "EggNews_nrt_karakedi_googlenews.tcl Script Fully Fixed by \[ nrt & karakedi \] Loaded - Region: Philippines by \[ asl_pls \]."
