@@ -9,7 +9,7 @@
 ########################################################################################### 
 #																										
 #																					
-# 	bigtwo_beta.tcl - A simplified Big Two IRC game script for Eggdrop				
+# 	EggBigtwo_beta.tcl - A simplified Big Two IRC game script for Eggdrop				
 # 																					
 #	Commands: 																			
 #
@@ -228,4 +228,4 @@ namespace eval ::BigTwo {
     }
 }
 
-putlog "Big Two IRC Script Loaded successfully."
+putlog "EggBigtwo_beta.tcl Big Two IRC Script Loaded successfully."
