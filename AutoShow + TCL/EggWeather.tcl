@@ -214,4 +214,4 @@ if {[info exists ::serveraddress] && $::serveraddress ne ""} {
     ::ircweather::initTimer "init" 
 }
 
-putlog "Loaded successfully: Weather_asl.tcl script by asl_pls @ irc.underx.org #aslpls."
+putlog "Loaded successfully: EggWeather.tcl script by asl_pls @ irc.underx.org #aslpls."
