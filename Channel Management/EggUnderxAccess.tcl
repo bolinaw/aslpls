@@ -8,7 +8,7 @@
 #                                                                                         #
 ###########################################################################################  
 #
-#                 underx-access.tcl by asl_pls @ irc.underx.org #aslpls                        
+#     EggUnderxAccess.tcl by asl_pls @ irc.underx.org #aslpls                        
 #                         UnderX Access Manager Script for Eggdrop                                
 #                                                                                                
 #     Commands:                                                                                 
@@ -91,5 +91,5 @@ namespace eval ::XAccess {
         return 1
     }
 
-    putlog "Loaded: UnderX X Access Manager Script by asl_pls @ irc.underx.org"
+    putlog "Loaded: EggUnderxAccess.tcl UnderX X Access Manager Script by asl_pls @ irc.underx.org"
 }
