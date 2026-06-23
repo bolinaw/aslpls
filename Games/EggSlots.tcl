@@ -9,7 +9,7 @@
 ########################################################################################### 
 #																																									
 #																					
-# 				slots.tcl - A simple IRC Slots Game for Eggdrop						
+# 				EggSlots.tcl - A simple IRC Slots Game for Eggdrop						
 # 				 Triggers: !slots <bet>, !points, !daily, !top						
 #																					
 ###########################################################################################
