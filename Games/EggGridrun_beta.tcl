@@ -9,7 +9,7 @@
 ########################################################################################### 
 #																					
 #																					
-# gridrun_beta.tcl - A Unique Cyberpunk Grid Hacking Game for Eggdrop				
+# EggGridrun_beta.tcl - A Unique Cyberpunk Grid Hacking Game for Eggdrop				
 # Version: 1.1.0																	
 # Features: Added flat-file score persistence and a !top high scores leaderboard.	
 #																					
