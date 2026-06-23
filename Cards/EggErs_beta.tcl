@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																					
-# 				ers.tcl - Egyptian Ratscrew for Eggdrop IRC Bots						
+# 	EggErs_beta.tcl - Egyptian Ratscrew for Eggdrop IRC Bots						
 #																					
 # 	Commands: !ers join, !ers start, !play (or !p), !slap (or !s), !ers stop		
 #																								
@@ -271,4 +271,4 @@ namespace eval ::ERS {
         }
     }
 }
-putlog "Egyptian Ratscrew Script v1.0 Loaded."
+putlog "EggErs_beta.tcl Egyptian Ratscrew Script v1.0 Loaded."
