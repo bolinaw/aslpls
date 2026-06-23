@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #                                                                                   
-#     underx_login.tcl by asl_pls @ irc.underx.org #aslpls                            
+#     EggUnderxLogin.tcl by asl_pls @ irc.underx.org #aslpls                            
 #     Eggdrop script to autologin to UnderX's X services and set user modes.        
 #                                                                                    
 ########################################################################################### 
@@ -43,4 +43,4 @@ namespace eval ::UndernetLogin {
     }
 }
 
-putlog "Loaded undernet_login.tcl successfully by asl_pls @ irc.underx.org"
+putlog "Loaded EggUnderxLogin.tcl successfully by asl_pls @ irc.underx.org"
