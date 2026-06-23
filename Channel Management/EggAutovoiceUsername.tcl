@@ -8,7 +8,7 @@
 ##                                                                               06/2026 ##
 ########################################################################################### 
 #                                                                                          
-#             autovoice_username.tcl by asl_pls @ irc.underx.org #aslpls                  
+#             EggAutovoiceUsername.tcl by asl_pls @ irc.underx.org #aslpls                  
 #             Automatically voices users who are logged into UndernX's                       
 #                       service upon joining a channel.                                      
 #                                                                                          
@@ -46,5 +46,5 @@ namespace eval ::UnderXVoice {
         return 0
     }
     
-    putlog "Loaded: Undernet X Auto-Voice Script by asl_pls @ irc.underx.org"
+    putlog "Loaded: EggAutovoiceUsername.tcl Undernet X Auto-Voice Script by asl_pls @ irc.underx.org"
 }
