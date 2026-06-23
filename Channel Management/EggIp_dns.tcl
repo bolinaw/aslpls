@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #																					
-# 	enhanced_ip_dns.tcl                                                         	
+# 	EggIp_dns.tcl                                                         	
 # 	An upgraded Eggdrop script for IP, DNS, and Reverse DNS lookups.           		
 # 	Includes built-in flood protection and localized time/maps.               		
 #                                                                             		
@@ -185,4 +185,4 @@ proc pub_rdnslookup {nick uhost hand chan text} {
     }
 }
 
-putlog "Loaded Enhanced IP, DNS & RDNS script with Flood Control."
+putlog "Loaded EggIp_dns.tcl Enhanced IP, DNS & RDNS script with Flood Control."
