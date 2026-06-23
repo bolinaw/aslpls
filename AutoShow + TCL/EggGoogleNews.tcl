@@ -24,9 +24,9 @@ namespace eval ::GoogleNews {
     # CONFIGURATION
     # --------------------------------------------------------------------------
     variable channel     "#aslpls"    ;# Channel to announce automated news
-    variable default_gl  "US"              ;# Default country code for automation
+    variable default_gl  "PH"              ;# Default country code for automation
     variable default_hl  "en"              ;# Default language code for automation
-    variable max_items   3                 ;# Number of headlines to display per run
+    variable max_items   5                 ;# Number of headlines to display per run
     variable auto_timer  60                ;# Timer interval in MINUTES (e.g., 60 = 1 hour)
 
     # Bindings
@@ -195,4 +195,4 @@ namespace eval ::GoogleNews {
     }
 }
 
-putlog "Loaded Egg News RSS Engine with an adjustable $::GoogleNews::auto_timer-minute loop."
+putlog "Loaded Google News RSS Engine with an adjustable $::GoogleNews::auto_timer-minute loop."
