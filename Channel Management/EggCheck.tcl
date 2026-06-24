@@ -10,7 +10,7 @@
 #
 # 	Proxycheck.io IP & Nick Checker for Eggdrop
 #
-# 	Version: 1.5
+# 	Version: 1.0
 #
 # 	Commands: 
 #   	!checkip <IP>
@@ -154,5 +154,5 @@ namespace eval ::ProxyCheck {
         }
     }
 
-    putlog "Loaded: EggProxyCheck1.5.tcl Proxycheck.io IP & Nick Checker Script v1.5"
+    putlog "Loaded: EggCheck.tcl Proxycheck.io IP & Nick Checker Script v1.0"
 }
