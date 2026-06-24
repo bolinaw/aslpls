@@ -8,7 +8,7 @@
 ##                                                                               06/2026 ##
 ###########################################################################################
 # 
-# EggChanlimitPro.tcl - Advanced Dynamic Channel Limit Script                                 
+# EggLimitPro.tcl - Advanced Dynamic Channel Limit Script                                 
 # Features: Multi-channel support, flood protection, and real-time activity logging.      
 # Nickname / Context: asl_pls | irc.underx.org #aslpls                                     
 #
@@ -119,5 +119,5 @@ namespace eval ::ChanLimitPro {
         }
     }
     
-    putlog "Loaded EggChanlimitPro.tcl successfully. Enable in channels using: .chanset #channel +dynamiclimit"
+    putlog "Loaded EggLimitPro.tcl successfully. Enable in channels using: .chanset #channel +dynamiclimit"
 }
