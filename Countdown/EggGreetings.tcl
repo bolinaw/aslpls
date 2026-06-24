@@ -136,7 +136,7 @@ namespace eval ::XmasQuotes {
     proc pub_xmasquote {nick uhost hand chan text} {
         variable quotes
         set selected [lindex $quotes [expr {int(rand() * [llength $quotes])}]]
-        putquick "PRIVMSG $chan :\002\[Christmas\00303Bell\003\]\002 $selected"
+        putquick "PRIVMSG $chan :\002\[Christmas \00303Bell\003\]\002 $selected"
         return 1
     }
 
@@ -150,7 +150,7 @@ namespace eval ::XmasQuotes {
         
         foreach chan [split $target_chans] {
             if {[validchan $chan] && [onchan $botnick $chan]} {
-                putquick "PRIVMSG $chan :\[\00304Jingle\003\00306Bell\003\] $selected"
+                putquick "PRIVMSG $chan :\[\00304Jingle\003 \00306Bell\003\] $selected"
             }
         }
         
