@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #                                                                                   
-#                EggChan_antiflood.tcl by asl_pls irc.underx.org               
+#                EggFlood.tcl by asl_pls irc.underx.org               
 #       A global firewall that protects the channel and bot from text floods.        
 #                                                                                    
 ###########################################################################################
@@ -109,5 +109,5 @@ namespace eval ::GlobalGuard {
         }
     }
 
-    putlog "--- [GlobalGuard] Global Channel Firewall Active! ---"
+    putlog "--- [GlobalGuard] Global EggFlood.tcl Channel Firewall Active! ---"
 }
