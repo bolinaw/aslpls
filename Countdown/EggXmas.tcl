@@ -8,7 +8,7 @@
 #                                                                                         #
 ########################################################################################### 
 #                                                                                    
-#     EggXmasCountdown.tcl by asl_pls @ irc.underx.org #aslpls                    
+#     EggXmas.tcl by asl_pls @ irc.underx.org #aslpls                    
 #     Christmas 2026 Countdown Auto-Topic Script for Eggdrop                        
 #     Updates the channel topic every 2 hours with the remaining time.                
 #                                                                                        
@@ -71,4 +71,4 @@ namespace eval ::XmasCountdown {
     }
 }
 
-putlog "Loaded: EggXmasCountdown.tcl Christmas 2026 Countdown Topic Script (Every 2 Hours) by asl_pls @ irc.underx.org"
+putlog "Loaded: EggXmas.tcl Christmas 2026 Countdown Topic Script (Every 2 Hours) by asl_pls @ irc.underx.org"
