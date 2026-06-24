@@ -7,7 +7,7 @@
 ##                      asl_pls / irc.underx.org #aslpls    	                         ##
 ##                                                                               06/2026 ##
 ########################################################################################### 
-# EggAdminCmds.tcl by asl_pls @ irc.underx.org #aslpls                                    
+# EggCmds.tcl by asl_pls @ irc.underx.org #aslpls                                    
 # Eggdrop Administrative and UnderX Service Automation Script                             
 # Updated with extended channel modes and X modinfo capabilities.                         
 ###########################################################################################
@@ -214,5 +214,5 @@ namespace eval ::AdminX {
         putserv "PRIVMSG $chan :Sent Request to X: modinfo $chan access $username $new_level"
     }
 
-    putlog "Loaded: EggAdminCmds.tcl Extended UnderX Admin Engine by asl_pls @ irc.underx.org #aslpls"
+    putlog "Loaded: EggCmds.tcl Extended UnderX Admin Engine by asl_pls @ irc.underx.org #aslpls"
 }
