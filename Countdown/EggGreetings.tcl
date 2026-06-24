@@ -1,13 +1,23 @@
-# ==============================================================================
-# xmasquotes.tcl - Standalone Christmas Quotes with adjustable timer variable.
+###########################################################################################
+#                      ____  ____  _     ____  _     ____ 	                          #
+#                     /  _ \/ ___\/ \   /  __\/ \   / ___\	                          #
+#                     | / \||    \| |   |  \/|| |   |    \	                          #
+#                     | |-||\___ || |_/\|  __/| |_/\\___ |	                          #
+#                     \_/ \|\____/\____/\_/   \____/\____/	                          #
+#                       asl_pls / irc.underx.org #aslpls    	                          #
+#                                                                                         #
+###########################################################################################
+#
+# EggGreetings.tcl - Standalone Christmas Quotes with adjustable timer variable.
 # Clean text formatting optimized for traditional IRC clients.
-# ==============================================================================
+#
+###########################################################################################
 
 namespace eval ::XmasQuotes {
     # CONFIGURATION
     # Target channels where the automation will broadcast.
     # Separate multiple channels with spaces, e.g., "#channel1 #channel2"
-    variable target_chans "#christmas"
+    variable target_chans "#aslpls"
 
     # Set the automation interval in minutes (e.g., 60 for every hour)
     variable interval_minutes 60
@@ -163,5 +173,5 @@ namespace eval ::XmasQuotes {
     # Initialize the automated loop cycle upon script loading/rehashing
     schedule_timer
     
-    putlog "Loaded: xmasquotes.tcl with a customizable [set interval_minutes]-minute loop cycle active."
+    putlog "Loaded: EggGreetings.tcl with a customizable [set interval_minutes]-minute loop cycle active."
 }
