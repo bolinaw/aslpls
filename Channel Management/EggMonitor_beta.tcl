@@ -8,7 +8,7 @@
 ##                                                                               06/2026 ##
 ########################################################################################### 
 #
-# channel_monitor.tcl by asl_pls @ irc.underx.org #aslpls                                 
+# EggMonitor_beta.tcl by asl_pls @ irc.underx.org #aslpls                                 
 # Monitors a specific channel's users, status, hosts, idle times, and writes an HTML file.
 #
 ###########################################################################################
@@ -286,4 +286,4 @@ namespace eval ::ChanMonitor {
     init
 }
 
-putlog "Loaded: Channel_monitor.tcl by asl_pls @ irc.underx.org #aslpls"
+putlog "Loaded: EggMonitor_beta.tcl by asl_pls @ irc.underx.org #aslpls"
