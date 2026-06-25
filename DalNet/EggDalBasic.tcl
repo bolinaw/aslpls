@@ -1,6 +1,19 @@
 #################################################################
-# DALnet Channel & User Administration Script                   #
-# Built for strict DALnet compatibility & Eggdrop security      #
+#	_______ ______________ ________ ______ ________
+#	___    |__  ___/___  / ___  __ \___  / __  ___/
+#	__  /| |_____ \ __  /  __  /_/ /__  /  _____ \ 
+#	_  ___ |____/ / _  /____  ____/ _  /_______/ / 
+#	/_/  |_|/____/  /_____//_/      /_____//____/  
+#		  asl_pls / irc.underx.org	
+#							
+#################################################################
+# DALnet Channel & User Administration Script                   
+# Built for strict DALnet compatibility & Eggdrop security      
+#
+# To give access other users
+# .chattr YourIRCName +m (Gives you Master status for !join, !part, !cycle)
+# .chattr YourIRCName +o (Gives you Operator status for !op, !k, !b, etc.)
+#
 #################################################################
 
 namespace eval ::DalnetAdmin {
