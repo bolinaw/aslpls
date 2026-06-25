@@ -21,7 +21,7 @@ package require json
 ::http::register https 443 [list ::tls::socket -autoservername 1]
 
 # CONFIGURATION
-# https://console.cloud.google.com/
+# https://console.cloud.google.com/ - get your API Key
 
 
 set yt_apikey "YOUR-API-KEY-HERE"
