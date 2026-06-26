@@ -106,7 +106,7 @@ namespace eval ::Bible {
                         }
                         
                         # Construct IRC output string with subtle bold styling
-                        set output " \002\[Bible\]\002 $reference - $full_text"
+                        set output " \002\[Bible\]\002 \00312$reference\003 - $full_text"
                         
                         # Broadcast to target channels
                         foreach chan [split $channels] {
