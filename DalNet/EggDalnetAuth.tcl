@@ -15,8 +15,8 @@ namespace eval ::DalnetAuth {
     # -----------------------------------------------------------
     # CONFIGURATION
     # -----------------------------------------------------------
-    variable nick "YourBotNick"
-    variable pass "YourSecretPassword"
+    variable nick "username"
+    variable pass "password"
     
     # Set this to 1 if you want the bot to attempt to GHOST its 
     # nick if someone else (or a stuck connection) is using it.
@@ -27,16 +27,16 @@ namespace eval ::DalnetAuth {
     # -----------------------------------------------------------
     bind raw - 376 [namespace current]::on_connect
     bind raw - 422 [namespace current]::on_connect
-    bind notice - * [namespace current]::on_notice
+    # FIXED: Changed 'notice' to 'notc'
+    bind notc - * [namespace current]::on_notice
 
     proc on_connect {from keyword args} {
         variable nick
         variable pass
         variable use_ghost
 
-        # Verify we are actually on a DALnet server by checking server string
-        # or relying on your network configuration setup.
-        if {[info exists ::network] && [string columns $::network] && [string tolower $::network] ne "dalnet"} {
+        # FIXED: Removed 'string columns' which is invalid Tcl and replaced with a valid length check
+        if {[info exists ::network] && [string length $::network] && [string tolower $::network] ne "dalnet"} {
             # Optional: Remove or comment out if your eggdrop doesn't set $network natively
         }
 
