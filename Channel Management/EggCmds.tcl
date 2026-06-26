@@ -16,9 +16,11 @@ namespace eval ::AdminX {
     # -----------------------------------------------------------------
     # BINDINGS (Public channel commands)
     # -----------------------------------------------------------------
+    # Bot Owner Management (Requires global 'n' owner flag)
+    bind pub n "!join"     [namespace current]::pub_join
+    bind pub n "!part"     [namespace current]::pub_part
+    
     # Channel Management (Requires global or channel 'o' operator flag)
-    bind pub o|o "!join"     [namespace current]::pub_join
-    bind pub o|o "!part"     [namespace current]::pub_part
     bind pub o|o "!op"       [namespace current]::pub_op
     bind pub o|o "!deop"     [namespace current]::pub_deop
     bind pub o|o "!v"        [namespace current]::pub_voice
@@ -37,26 +39,37 @@ namespace eval ::AdminX {
     bind pub o|o "!p"        [namespace current]::pub_private
     bind pub o|o "!-p"       [namespace current]::pub_unprivate
 
-    # UnderX Management (Requires global or channel 'm' master flag)
-    bind pub m|m "!adduser"  [namespace current]::pub_x_adduser
-    bind pub m|m "!deluser"  [namespace current]::pub_x_deluser
-    bind pub m|m "!autoop"   [namespace current]::pub_x_autoop
-    bind pub m|m "!autovoice" [namespace current]::pub_x_autovoice
-    bind pub m|m "!modinfo"  [namespace current]::pub_x_modinfo
+    # UnderX Management (Requires global 'n' owner flag for master controls)
+    bind pub n "!adduser"  [namespace current]::pub_x_adduser
+    bind pub n "!deluser"  [namespace current]::pub_x_deluser
+    bind pub n "!autoop"   [namespace current]::pub_x_autoop
+    bind pub n "!autovoice" [namespace current]::pub_x_autovoice
+    bind pub n "!modinfo"  [namespace current]::pub_x_modinfo
 
     # -----------------------------------------------------------------
     # CHANNEL & MODERATION PROCEDURES
     # -----------------------------------------------------------------
-    proc pub_join {nick uhost hand chan arg} {
+     proc pub_join {nick uhost hand chan arg} {
+        # Check if the user triggering the command actually has global owner 'n' status
+        if {![matchattr $hand n]} {
+            # Diagnostics: Tells you what handle the bot thinks you are using
+            putserv "NOTICE $nick :Access Denied. You require global owner (+n) flags. Your current bot handle is: '$hand'"
+            return
+        }
+
         set target [lindex [split $arg] 0]
-        if {$target eq ""} { putserv "PRIVMSG $chan :Usage: !join #channel"; return }
+        if {$target eq ""} { 
+            putserv "PRIVMSG $chan :Usage: !join #channel"
+            return 
+        }
+        
         putserv "JOIN $target"
     }
 
     proc pub_part {nick uhost hand chan arg} {
         set target [lindex [split $arg] 0]
         if {$target eq ""} { set target $chan }
-        putserv "PART $target :Requested by $nick"
+        putserv "PART $target :Requested by owner ($nick)"
     }
 
     proc pub_op {nick uhost hand chan arg} {
