@@ -1,5 +1,7 @@
 <p>check it out XiRPG.tcl IRC Eggdrop Channel Game, active and working</p>
 
+ENJOY AND HAVE FUN USING THE SCRIPT.
+
 <pre>irc.underx.org #XiRPG</pre>
 <pre>irc.pinoychat.fun #XiRPG</pre>
 
