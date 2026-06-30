@@ -18,15 +18,15 @@
 
 namespace eval XiRPG {
     # --- CONFIGURATION ---
-    variable channel "#xirpg"              ;# Public stream for world updates/drama
-    variable savefile "scripts/irpg/xirpg.db" ;# Where player data is saved
-    variable tick_rate 60                ;# Game loop tick rate for hunts/gains (seconds)
-    variable pvp_rate_mins 120            ;# PvP Arena Tournament interval (Strictly 60 Minutes / 1 Hour)
-    variable top10_rate_mins 180          ;# Top 10 Leaderboard update interval (Strictly 30 Minutes)
-    variable bounty_rate_mins 240        ;# Elite Bounty Board rotation interval (4 Hours)
-    variable boss_chance 8               ;# % chance a 60s tick spawns a World Boss
-    variable boss_duration 200           ;# How many seconds the World Boss stays
-    variable amulet_drop_chance 6       ;# % chance a successful hunt drops a rare amulet
+    variable channel "#xirpg"                    ;# Public stream for world updates/drama
+    variable savefile "scripts/irpg/xirpg.db"    ;# Where player data is saved
+    variable tick_rate 60                        ;# Game loop tick rate for hunts/gains (seconds)
+    variable pvp_rate_mins 120                   ;# PvP Arena Tournament interval (Strictly 60 Minutes / 1 Hour)
+    variable top10_rate_mins 180                 ;# Top 10 Leaderboard update interval (Strictly 30 Minutes)
+    variable bounty_rate_mins 240                ;# Elite Bounty Board rotation interval (4 Hours)
+    variable boss_chance 8                       ;# % chance a 60s tick spawns a World Boss
+    variable boss_duration 200                   ;# How many seconds the World Boss stays
+    variable amulet_drop_chance 6                ;# % chance a successful hunt drops a rare amulet
 
     # --- INTERNAL STORAGE ---
     variable players
